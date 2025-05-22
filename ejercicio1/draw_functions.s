@@ -20,7 +20,7 @@
 
     .globl draw_background
     .globl draw_body
-    .glovl draw_red_rainbow
+    .globl draw_red_rainbow
 /*     .globl draw_star
     .globl draw_sarasa */
 
