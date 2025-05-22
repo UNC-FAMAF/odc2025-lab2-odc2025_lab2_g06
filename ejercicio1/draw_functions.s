@@ -21,6 +21,7 @@
     .globl draw_background
     .globl draw_body
     .globl draw_red_rainbow
+    .globl draw_orange_rainbow
 /*     .globl draw_star
     .globl draw_sarasa */
 
@@ -49,6 +50,63 @@ draw_background:
     add sp, sp, #48
 
     ret
+
+draw_orange_rainbow:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 252  
+    mov x3, 15       
+    mov x4, 232
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 259 
+    mov x3, 69      
+    mov x4, 239
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 252  
+    mov x3, 125       
+    mov x4, 232
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 126        
+    mov x2, 259 
+    mov x3, 180       
+    mov x4, 239
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 181        
+    mov x2, 252 
+    mov x3, 235       
+    mov x4, 232
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 259 
+    mov x3, 243       
+    mov x4, 239
+    ldr x7, =ORANGE
+    bl draw_rectangle
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
 
 draw_red_rainbow:
     sub sp, sp, #48
