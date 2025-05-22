@@ -8,7 +8,7 @@
     .equ PINK, 0xff9aff
     .equ FUCSIA, 0xfc319a
     .equ CHEEKS, 0xfb9a93
-    .equ BREAD, 0xfec8a1
+    .equ BREAD, 0xfeca97
     .equ RED, 0xf90101
     .equ ORANGE, 0xfe9900
     .equ YELLOW, 0xffff01
@@ -61,64 +61,411 @@ draw_body:
     str x7, [sp, #32]
     str x30, [sp, #40]
 
-    mov x1, 270       
-    mov x2, 190    
-    mov x3, 380       
-    mov x4, 193
+//========================> CONTORNO TOSTADA <=====================//
+    mov x1, 257       
+    mov x2, 218    
+    mov x3, 374       
+    mov x4, 212
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 267       
-    mov x2, 196    
-    mov x3, 270       
-    mov x4, 193
+    mov x1, 251       
+    mov x2, 224    
+    mov x3, 256       
+    mov x4, 219
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 380       
-    mov x2, 196    
-    mov x3, 383       
-    mov x4, 193
+    mov x1, 244       
+    mov x2, 322    
+    mov x3, 249       
+    mov x4, 226
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 264       
-    mov x2, 270    
-    mov x3, 267       
-    mov x4, 196
+    mov x1, 237       
+    mov x2, 328    
+    mov x3, 256       
+    mov x4, 323
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 383       
-    mov x2, 270    
-    mov x3, 386       
-    mov x4, 196
+    mov x1, 257       
+    mov x2, 335    
+    mov x3, 402       
+    mov x4, 330
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 267       
-    mov x2, 273    
-    mov x3, 270       
-    mov x4, 270
+    mov x1, 403       
+    mov x2, 328    
+    mov x3, 408       
+    mov x4, 323
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 380       
-    mov x2, 273    
-    mov x3, 383       
-    mov x4, 270
+    mov x1, 410       
+    mov x2, 321    
+    mov x3, 415       
+    mov x4, 316
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 270       
-    mov x2, 273    
-    mov x3, 380       
-    mov x4, 276
+    mov x1, 417       
+    mov x2, 314    
+    mov x3, 422       
+    mov x4, 281
     ldr x7, =BLACK
     bl draw_rectangle
-    mov x1, 270       
-    mov x2, 270    
-    mov x3, 380       
-    mov x4, 196
+    mov x1, 410       
+    mov x2, 280    
+    mov x3, 415       
+    mov x4, 253
+    ldr x7, =BLACK
+    bl draw_rectangle  
+    mov x1, 395       
+    mov x2, 252    
+    mov x3, 409       
+    mov x4, 247
+    ldr x7, =BLACK
+    bl draw_rectangle  
+    mov x1, 388       
+    mov x2, 259    
+    mov x3, 395       
+    mov x4, 253
+    ldr x7, =BLACK
+    bl draw_rectangle  
+    mov x1, 382       
+    mov x2, 266    
+    mov x3, 387       
+    mov x4, 225
+    ldr x7, =BLACK
+    bl draw_rectangle  
+    mov x1, 375        
+    mov x2, 224    
+    mov x3, 381       
+    mov x4, 219
+    ldr x7, =BLACK
+    bl draw_rectangle  
+//========================> DULCE TOSTADA <=====================//
+    mov x1, 257       
+    mov x2, 322    
+    mov x3, 374       
+    mov x4, 225
     ldr x7, =PINK
+    bl draw_rectangle  
+    mov x1, 271        
+    mov x2, 315    
+    mov x3, 277       
+    mov x4, 309
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 292       
+    mov x2, 308    
+    mov x3, 298       
+    mov x4, 302
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 264       
+    mov x2, 294    
+    mov x3, 270       
+    mov x4, 288
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 278       
+    mov x2, 280    
+    mov x3, 284       
+    mov x4, 274
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 306       
+    mov x2, 287    
+    mov x3, 312       
+    mov x4, 281
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 299       
+    mov x2, 266    
+    mov x3, 305       
+    mov x4, 260
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 271       
+    mov x2, 245    
+    mov x3, 277       
+    mov x4, 239
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 306       
+    mov x2, 238    
+    mov x3, 312       
+    mov x4, 232
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 327       
+    mov x2, 238    
+    mov x3, 333       
+    mov x4, 232
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    mov x1, 354       
+    mov x2, 252    
+    mov x3, 360       
+    mov x4, 246
+    ldr x7, =FUCSIA
+    bl draw_rectangle  
+    
+
+//========================> PAN TOSTADA <=====================//
+    mov x1, 250       
+    mov x2, 322    
+    mov x3, 256       
+    mov x4, 225
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 257       
+    mov x2, 239    
+    mov x3, 263       
+    mov x4, 219
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 264       
+    mov x2, 232    
+    mov x3, 270       
+    mov x4, 219
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 271       
+    mov x2, 224    
+    mov x3, 374       
+    mov x4, 219
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 361       
+    mov x2, 232    
+    mov x3, 381       
+    mov x4, 225
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 368       
+    mov x2, 239    
+    mov x3, 381       
+    mov x4, 233
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 375       
+    mov x2, 266    
+    mov x3, 381       
+    mov x4, 240
+    ldr x7, =BREAD
+    bl draw_rectangle 
+    mov x1, 257       
+    mov x2, 329    
+    mov x3, 264       
+    mov x4, 308
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 265       
+    mov x2, 329    
+    mov x3, 270       
+    mov x4, 315
+    ldr x7, =BREAD
+    bl draw_rectangle  
+    mov x1, 271        
+    mov x2, 329    
+    mov x3, 326       
+    mov x4, 323
+    ldr x7, =BREAD
+    bl draw_rectangle 
+
+//=========== CONTORNO CABEZA ================//
+    mov x1, 354        
+    mov x2, 273   
+    mov x3, 381       
+    mov x4, 267
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 347        
+    mov x2, 266   
+    mov x3, 353       
+    mov x4, 260
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 340        
+    mov x2, 259   
+    mov x3, 346       
+    mov x4, 253
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 326         
+    mov x2, 252   
+    mov x3, 339       
+    mov x4, 247
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 320        
+    mov x2, 280   
+    mov x3, 325       
+    mov x4, 253
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 313         
+    mov x2, 315   
+    mov x3, 319       
+    mov x4, 281
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 320        
+    mov x2, 321   
+    mov x3, 325       
+    mov x4, 316
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 327        
+    mov x2, 329   
+    mov x3, 332       
+    mov x4, 323
+    ldr x7, =BLACK
+    bl draw_rectangle 
+
+//=============> RELLENO DE CABEZA <==============//
+    mov x1, 326        
+    mov x2, 259   
+    mov x3, 339       
+    mov x4, 253
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 326         
+    mov x2, 266   
+    mov x3, 346       
+    mov x4, 260
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 326        
+    mov x2, 273   
+    mov x3, 353       
+    mov x4, 267
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 326         
+    mov x2, 280   
+    mov x3, 409       
+    mov x4, 274
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 382        
+    mov x2, 273   
+    mov x3, 409       
+    mov x4, 267
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 388        
+    mov x2, 266   
+    mov x3, 409       
+    mov x4, 260
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 396         
+    mov x2, 259   
+    mov x3, 409       
+    mov x4, 253
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 320        
+    mov x2, 315   
+    mov x3, 416       
+    mov x4, 281
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 326        
+    mov x2, 322   
+    mov x3, 409       
+    mov x4, 316
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 333        
+    mov x2, 329   
+    mov x3, 402       
+    mov x4, 323
+    ldr x7, =GRAY
+    bl draw_rectangle
+//=============> FACCIONES CABEZA <================//
+    mov x1, 340        
+    mov x2, 301   
+    mov x3, 353       
+    mov x4, 295
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 347         
+    mov x2, 294   
+    mov x3, 353       
+    mov x4, 288
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 389         
+    mov x2, 301   
+    mov x3, 402       
+    mov x4, 295
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 396         
+    mov x2, 294   
+    mov x3, 402       
+    mov x4, 288
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 347        
+    mov x2, 321   
+    mov x3, 353       
+    mov x4, 308
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 354        
+    mov x2, 321   
+    mov x3, 395       
+    mov x4, 316
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 368        
+    mov x2, 316   
+    mov x3, 374       
+    mov x4, 308
+    ldr x7, =BLACK
+    bl draw_rectangle 
+    mov x1, 389        
+    mov x2, 315   
+    mov x3, 395       
+    mov x4, 308
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 326        
+    mov x2, 315   
+    mov x3, 340       
+    mov x4, 302
+    ldr x7, =CHEEKS
+    bl draw_rectangle
+    mov x1, 402        
+    mov x2, 315   
+    mov x3, 416       
+    mov x4, 302
+    ldr x7, =CHEEKS
+    bl draw_rectangle
+    mov x1, 340        
+    mov x2, 294   
+    mov x3, 346       
+    mov x4, 288
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 388        
+    mov x2, 294   
+    mov x3, 394       
+    mov x4, 288
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 388        
+    mov x2, 294   
+    mov x3, 394       
+    mov x4, 288
+    ldr x7, =WHITE
     bl draw_rectangle
 
     
 
 
+    
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
