@@ -18,6 +18,7 @@ main:
     bl draw_green_rainbow
     bl draw_blue_rainbow
     bl draw_purple_rainbow
+    bl draw_toes
     // Infinite Loop
 InfLoop:
     b InfLoop
