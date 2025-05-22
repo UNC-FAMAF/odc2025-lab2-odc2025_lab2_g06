@@ -18,10 +18,12 @@
     .equ BLUE, 0x151D7E
 
 
-    .globl draw_background
+    .globl draw_background 
     .globl draw_body
     .globl draw_red_rainbow
     .globl draw_orange_rainbow
+    .globl draw_yellow_rainbow
+    .globl draw_green_rainbow
 /*     .globl draw_star
     .globl draw_sarasa */
 
@@ -50,6 +52,211 @@ draw_background:
     add sp, sp, #48
 
     ret
+
+draw_green_rainbow:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 294 
+    mov x3, 15      
+    mov x4, 272
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 301
+    mov x3, 69     
+    mov x4, 280
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 294  
+    mov x3, 125      
+    mov x4, 272
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 124        
+    mov x2, 301 
+    mov x3, 179       
+    mov x4, 280
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 180       
+    mov x2, 294 
+    mov x3, 200      
+    mov x4, 272
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 201       
+    mov x2, 294 
+    mov x3, 208      
+    mov x4, 280
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 209       
+    mov x2, 294 
+    mov x3, 214      
+    mov x4, 288
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 215       
+    mov x2, 294 
+    mov x3, 228       
+    mov x4, 288
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 209        
+    mov x2, 287 
+    mov x3, 221      
+    mov x4, 281
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 201        
+    mov x2, 280
+    mov x3, 214       
+    mov x4, 273
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 229        
+    mov x2, 280
+    mov x3, 235      
+    mov x4, 273
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 287
+    mov x3, 243      
+    mov x4, 273
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 215        
+    mov x2, 280
+    mov x3, 228   
+    mov x4, 273
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 222        
+    mov x2, 287
+    mov x3, 235   
+    mov x4, 281
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 229        
+    mov x2, 294
+    mov x3, 243
+    mov x4, 288
+    ldr x7, =GRAY
+    bl draw_rectangle
+
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+
+
+
+draw_yellow_rainbow:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 272  
+    mov x3, 15       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 279 
+    mov x3, 69      
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 272  
+    mov x3, 125       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 126        
+    mov x2, 279 
+    mov x3, 180       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 181        
+    mov x2, 272 
+    mov x3, 200       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 201        
+    mov x2, 259 
+    mov x3, 236       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 229        
+    mov x2, 266 
+    mov x3, 235       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 272 
+    mov x3, 243       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 201       
+    mov x2, 266 
+    mov x3, 228       
+    mov x4, 260
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 201        
+    mov x2, 272 
+    mov x3, 207       
+    mov x4, 266
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 222        
+    mov x2, 272 
+    mov x3, 235       
+    mov x4, 266
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 208        
+    mov x2, 272 
+    mov x3, 221      
+    mov x4, 266
+    ldr x7, =GRAY
+    bl draw_rectangle
+    
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
 
 draw_orange_rainbow:
     sub sp, sp, #48
