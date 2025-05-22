@@ -16,6 +16,7 @@ main:
     bl draw_orange_rainbow
     bl draw_yellow_rainbow
     bl draw_green_rainbow
+    bl draw_blue_rainbow
     // Infinite Loop
 InfLoop:
     b InfLoop

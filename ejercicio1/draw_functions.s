@@ -24,6 +24,7 @@
     .globl draw_orange_rainbow
     .globl draw_yellow_rainbow
     .globl draw_green_rainbow
+    .globl draw_blue_rainbow
 /*     .globl draw_star
     .globl draw_sarasa */
 
@@ -52,6 +53,80 @@ draw_background:
     add sp, sp, #48
 
     ret
+
+draw_blue_rainbow:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 315
+    mov x3, 15      
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 322
+    mov x3, 69     
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 70       
+    mov x2, 315  
+    mov x3, 125      
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 124        
+    mov x2, 322
+    mov x3, 179       
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 180       
+    mov x2, 315 
+    mov x3, 221      
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 222       
+    mov x2, 315 
+    mov x3, 235     
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 236      
+    mov x2, 322
+    mov x3, 243    
+    mov x4, 309
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 223      
+    mov x2, 301
+    mov x3, 243    
+    mov x4, 295
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 236      
+    mov x2, 308
+    mov x3, 243    
+    mov x4, 302
+    ldr x7, =BLACK
+    bl draw_rectangle
+    
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
 
 draw_green_rainbow:
     sub sp, sp, #48
