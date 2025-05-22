@@ -50,6 +50,50 @@ draw_background:
 
     ret
 
+draw_red_rainbow:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 81        
+    mov x2, 205  
+    mov x3, 95       
+    mov x4, 186
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 96        
+    mov x2, 212  
+    mov x3, 149       
+    mov x4, 193
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 150        
+    mov x2, 205  
+    mov x3, 204       
+    mov x4, 186
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 205        
+    mov x2, 212 
+    mov x3, 260       
+    mov x4, 193
+    ldr x7, =RED
+    bl draw_rectangle
+
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
 
 
 
@@ -475,52 +519,6 @@ draw_body:
     ldr x1, [sp]
     add sp, sp, #48
 ret
-
-draw_red_rainbow:
-    sub sp, sp, #48
-    str x1, [sp]
-    str x2, [sp, #8]
-    str x3, [sp, #16]
-    str x4, [sp, #24]
-    str x7, [sp, #32]
-    str x30, [sp, #40]
-    
-    mov x1, 81        
-    mov x2, 205  
-    mov x3, 95       
-    mov x4, 186
-    ldr x7, =RED
-    bl draw_rectangle
-    mov x1, 96        
-    mov x2, 212  
-    mov x3, 149       
-    mov x4, 193
-    ldr x7, =RED
-    bl draw_rectangle
-    mov x1, 150        
-    mov x2, 205  
-    mov x3, 204       
-    mov x4, 186
-    ldr x7, =RED
-    bl draw_rectangle
-    mov x1, 205        
-    mov x2, 212 
-    mov x3, 260       
-    mov x4, 193
-    ldr x7, =RED
-    bl draw_rectangle
-
-
-
-    ldr x30, [sp, #40]
-    ldr x7, [sp, #32]
-    ldr x4, [sp, #24]
-    ldr x3, [sp, #16]
-    ldr x2, [sp, #8]
-    ldr x1, [sp]
-    add sp, sp, #48
-ret
-
 
 
 /* dibujo_dos_circulos_ejemplo:
