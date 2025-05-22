@@ -12,6 +12,7 @@ main:
 
 	bl draw_background
 	bl draw_body
+    bl draw_red_rainbow
 
     // Infinite Loop
 InfLoop:

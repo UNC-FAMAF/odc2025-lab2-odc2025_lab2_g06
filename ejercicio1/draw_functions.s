@@ -55,32 +55,50 @@ draw_red_rainbow:
     str x1, [sp]
     str x2, [sp, #8]
     str x3, [sp, #16]
-    str x4, [sp, #24]
+    str x4, [sp, #24]  
     str x7, [sp, #32]
     str x30, [sp, #40]
     
-    mov x1, 81        
-    mov x2, 205  
-    mov x3, 95       
-    mov x4, 186
+    mov x1, 0        
+    mov x2, 231  
+    mov x3, 15       
+    mov x4, 211
     ldr x7, =RED
     bl draw_rectangle
-    mov x1, 96        
-    mov x2, 212  
-    mov x3, 149       
-    mov x4, 193
+    mov x1, 16        
+    mov x2, 238 
+    mov x3, 69      
+    mov x4, 219
     ldr x7, =RED
     bl draw_rectangle
-    mov x1, 150        
-    mov x2, 205  
-    mov x3, 204       
-    mov x4, 186
+    mov x1, 70        
+    mov x2, 231  
+    mov x3, 125       
+    mov x4, 211
     ldr x7, =RED
     bl draw_rectangle
-    mov x1, 205        
-    mov x2, 212 
-    mov x3, 260       
-    mov x4, 193
+    mov x1, 126        
+    mov x2, 238 
+    mov x3, 180       
+    mov x4, 219
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 181        
+    mov x2, 231 
+    mov x3, 235       
+    mov x4, 212
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 238 
+    mov x3, 243       
+    mov x4, 219
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 243        
+    mov x2, 224 
+    mov x3, 250      
+    mov x4, 219
     ldr x7, =RED
     bl draw_rectangle
 
