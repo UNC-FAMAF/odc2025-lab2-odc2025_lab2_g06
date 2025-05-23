@@ -19,6 +19,10 @@ main:
      bl draw_body_5
 	 bl draw_tail_5
 
+	.globl main
+
+//main:
+	
 
 InfLoop:
 	b InfLoop

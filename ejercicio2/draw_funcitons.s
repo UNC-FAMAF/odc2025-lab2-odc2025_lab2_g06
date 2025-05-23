@@ -2582,140 +2582,139 @@ draw_letras_5:
     mov x2, 94 
     mov x3, 146      
     mov x4, 58
-    ldr x7, =VIOLET
+    ldr x7, =GREEN
     bl draw_rectangle
 
     mov x1, 147   
     mov x2, 57
     mov x3, 167      
     mov x4, 46
-    ldr x7, =VIOLET
+    ldr x7, =GREEN
     bl draw_rectangle
 
     mov x1, 168        
     mov x2, 94 
     mov x3, 177      
     mov x4, 58
-    ldr x7, =VIOLET
+    ldr x7, =GREEN
     bl draw_rectangle
 
     mov x1, 147        
     mov x2, 106
     mov x3, 167      
     mov x4, 95
-    ldr x7, =VIOLET
+    ldr x7, =GREEN
     bl draw_rectangle
 // ORANGE    
     mov x1, 188     
     mov x2, 106
     mov x3, 197      
     mov x4, 46
-    ldr x7, =PINK
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle   
 
     mov x1, 198    
     mov x2, 57
     mov x3, 218      
     mov x4, 46
-    ldr x7, =PINK
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle 
-
     mov x1, 198     
     mov x2, 57
     mov x3, 218      
     mov x4, 46
-    ldr x7, =PINK
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle 
 
     mov x1, 198     
     mov x2, 106
     mov x3, 218      
     mov x4, 95
-    ldr x7, =PINK
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle 
 
     mov x1, 219  
     mov x2, 94
     mov x3, 228      
     mov x4, 58
-    ldr x7, =PINK
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle
 // YELLOW
     mov x1, 239    
     mov x2, 94
     mov x3, 248      
     mov x4, 58
-    ldr x7, =RED
+    ldr x7, =VIOLET
     bl draw_rectangle 
     
     mov x1, 249     
     mov x2, 57
     mov x3, 269      
     mov x4, 46
-    ldr x7, =RED
+    ldr x7, =VIOLET
     bl draw_rectangle 
 
     mov x1, 249     
     mov x2, 106
     mov x3, 269      
     mov x4, 95
-    ldr x7, =RED
+    ldr x7, =VIOLET
     bl draw_rectangle 
 
     mov x1, 270     
     mov x2, 94
     mov x3, 279      
     mov x4, 83
-    ldr x7, =RED
+    ldr x7, =VIOLET
     bl draw_rectangle 
 
     mov x1, 270     
     mov x2, 69
     mov x3, 279    
     mov x4, 58
-    ldr x7, =RED
+    ldr x7, =VIOLET
     bl draw_rectangle 
 // 2
     mov x1, 311
     mov x2, 69
     mov x3, 320    
     mov x4, 58
-    ldr x7, =ORANGE
+    ldr x7, =PINK
     bl draw_rectangle 
 
     mov x1, 311
     mov x2, 106
     mov x3, 350
     mov x4, 95
-    ldr x7, =ORANGE
+    ldr x7, =PINK
     bl draw_rectangle 
 
     mov x1, 321   
     mov x2, 94
     mov x3, 330  
     mov x4, 83
-    ldr x7, =ORANGE
+    ldr x7, =PINK
     bl draw_rectangle 
 
     mov x1, 331   
     mov x2, 82
     mov x3, 340  
     mov x4, 70
-    ldr x7, =ORANGE
+    ldr x7, =PINK
     bl draw_rectangle 
 
     mov x1, 341 
     mov x2, 69
     mov x3, 350  
     mov x4, 58
-    ldr x7, =ORANGE
+    ldr x7, =PINK
     bl draw_rectangle 
 
     mov x1, 321  
     mov x2, 57
     mov x3, 340  
     mov x4, 46
-    ldr x7, =ORANGE
+    ldr x7, =PINK
     bl draw_rectangle
 
 // 0
@@ -2723,28 +2722,28 @@ draw_letras_5:
     mov x2, 94
     mov x3, 371  
     mov x4, 58
-    ldr x7, =YELLOW
+    ldr x7, =RED
     bl draw_rectangle
 
     mov x1, 372  
     mov x2, 57
     mov x3, 391  
     mov x4, 46
-    ldr x7, =YELLOW
+    ldr x7, =RED
     bl draw_rectangle
 
     mov x1, 372  
     mov x2, 106
     mov x3, 391
     mov x4, 95
-    ldr x7, =YELLOW
+    ldr x7, =RED
     bl draw_rectangle
 
     mov x1, 392  
     mov x2, 94
     mov x3, 402  
     mov x4, 58
-    ldr x7, =YELLOW
+    ldr x7, =RED
     bl draw_rectangle
 
 // 2
@@ -2753,42 +2752,42 @@ draw_letras_5:
     mov x2, 69
     mov x3, 422    
     mov x4, 58
-    ldr x7, =GREEN
+    ldr x7, =ORANGE
     bl draw_rectangle
 
     mov x1, 413    
     mov x2, 106
     mov x3, 453    
     mov x4, 95
-    ldr x7, =GREEN
+    ldr x7, =ORANGE
     bl draw_rectangle
 
     mov x1, 423    
     mov x2, 94
     mov x3, 432    
     mov x4, 83
-    ldr x7, =GREEN
+    ldr x7, =ORANGE
     bl draw_rectangle
 
     mov x1, 433    
     mov x2, 82
     mov x3, 442  
     mov x4, 70
-    ldr x7, =GREEN
+    ldr x7, =ORANGE
     bl draw_rectangle
 
     mov x1, 443    
     mov x2, 69
     mov x3, 453    
     mov x4, 58
-    ldr x7, =GREEN
+    ldr x7, =ORANGE
     bl draw_rectangle
 
     mov x1, 423    
     mov x2, 57
     mov x3, 442    
     mov x4, 46 
-    ldr x7, =GREEN
+    ldr x7, =ORANGE
     bl draw_rectangle
 
 // 5
@@ -2797,35 +2796,35 @@ draw_letras_5:
     mov x2, 57
     mov x3, 504    
     mov x4, 46
-    ldr x7, =LIGHT_BLUE
+    ldr x7, =YELLOW
     bl draw_rectangle
 
     mov x1, 464    
     mov x2, 82
     mov x3, 473    
     mov x4, 58
-    ldr x7, =LIGHT_BLUE
+    ldr x7, =YELLOW
     bl draw_rectangle
 
     mov x1, 474    
     mov x2, 82
     mov x3, 493    
     mov x4, 70
-    ldr x7, =LIGHT_BLUE
+    ldr x7, =YELLOW
     bl draw_rectangle
 
     mov x1, 494     
     mov x2, 94
     mov x3, 504  
     mov x4, 83
-    ldr x7, =LIGHT_BLUE
+    ldr x7, =YELLOW
     bl draw_rectangle
 
     mov x1, 464    
     mov x2, 106
     mov x3, 493  
     mov x4, 95
-    ldr x7, =LIGHT_BLUE
+    ldr x7, =YELLOW
     bl draw_rectangle
 
     ldr x30, [sp, #40]

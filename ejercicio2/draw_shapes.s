@@ -188,3 +188,4 @@ end_circle:
     ldr x1, [sp]
     add sp, sp, #88
 ret
+ret
