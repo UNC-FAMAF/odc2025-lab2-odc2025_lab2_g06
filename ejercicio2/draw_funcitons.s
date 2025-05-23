@@ -17,9 +17,8 @@
     .equ VIOLET, 0x6835ff
     .equ BLUE, 0x151D7E
 
-
     .globl draw_background
-    .globl draw_body
+    .globl draw_body_1
     .globl draw_red_rainbow_1
     .globl draw_orange_rainbow_1
     .globl draw_yellow_rainbow_1
@@ -30,6 +29,7 @@
     .globl draw_stars_1
     .globl draw_moon_1
 
+<<<<<<< HEAD
     .globl draw_background 
     .globl draw_body
     .globl draw_red_rainbow_2
@@ -42,6 +42,21 @@
     .globl draw_stars_2
     .globl draw_moon_2
     .globl draw_tail_2
+=======
+    .globl draw_background_5
+    .globl draw_body
+    .globl draw_red_rainbow_5
+    .globl draw_orange_rainbow_5
+    .globl draw_yellow_rainbow_5
+    .globl draw_green_rainbow_5
+    .globl draw_blue_rainbow_5
+    .globl draw_purple_rainbow_5
+    .globl draw_toes_5
+    .globl draw_stars_5
+    .globl draw_letras_5
+    .globl draw_body_5
+    .globl draw_tail_5
+>>>>>>> 2d8f35ace098db72c284ad672479cd18de388872
 
 
 draw_stars_1:
@@ -504,7 +519,7 @@ draw_moon_1:
     add sp, sp, #40
 ret
 
-draw_background_1:
+draw_background:
     sub sp, sp, #48
     str x1, [sp]
     str x2, [sp, #8]
@@ -653,8 +668,6 @@ draw_toes_1:
     add sp, sp, #48
 ret
 
-
-
 draw_purple_rainbow_1:
     sub sp, sp, #48
     str x1, [sp]
@@ -783,7 +796,6 @@ draw_blue_rainbow_1:
     add sp, sp, #48
 ret
 
-
 draw_green_rainbow_1:
     sub sp, sp, #48
     str x1, [sp]
@@ -894,9 +906,6 @@ draw_green_rainbow_1:
     ldr x1, [sp]
     add sp, sp, #48
 ret
-
-
-
 
 draw_yellow_rainbow_1:
     sub sp, sp, #48
@@ -1045,7 +1054,6 @@ draw_orange_rainbow_1:
     add sp, sp, #48
 ret
 
-
 draw_red_rainbow_1:
     sub sp, sp, #48
     str x1, [sp]
@@ -1108,8 +1116,6 @@ draw_red_rainbow_1:
     ldr x1, [sp]
     add sp, sp, #48
 ret
-
-
 
 draw_body_1:
     sub sp, sp, #48

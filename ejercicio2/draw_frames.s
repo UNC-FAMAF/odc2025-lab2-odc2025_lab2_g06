@@ -6,7 +6,22 @@
 
 
 
+frame_2:
+    bl draw_background
+	bl draw_body_2
+    bl draw_letras_2
+    bl draw_red_rainbow_2
+    bl draw_orange_rainbow_2
+    bl draw_yellow_rainbow_2
+    bl draw_green_rainbow_2
+    bl draw_blue_rainbow_2
+    bl draw_purple_rainbow_2
+    bl draw_toes_2
+    bl draw_stars_2
+    bl draw_tail_2
+ret
 
+<<<<<<< HEAD
 
 frame_5:
      bl draw_background_5
@@ -24,5 +39,15 @@ frame_5:
 ret
 frame_3:
 
+=======
+frame_3: 
+    bl draw_background
+    bl draw_stars_3
+    bl draw_letters_3
+    bl draw_rainbow_all_colors
+    bl draw_body_3
+    bl draw_toes_3
+    bl draw_tail_3
+>>>>>>> 2d8f35ace098db72c284ad672479cd18de388872
 
 ret
