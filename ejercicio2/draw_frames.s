@@ -20,3 +20,14 @@ frame_2:
     bl draw_stars_2
     bl draw_tail_2
 ret
+
+frame_3: 
+    bl draw_background
+    bl draw_stars_3
+    bl draw_letters_3
+    bl draw_rainbow_all_colors
+    bl draw_body_3
+    bl draw_toes_3
+    bl draw_tail_3
+
+ret
