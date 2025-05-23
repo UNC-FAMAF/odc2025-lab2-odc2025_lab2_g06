@@ -525,7 +525,7 @@ draw_letras:
     mov x3, 228      
     mov x4, 58
     ldr x7, =ORANGE
-    bl draw_rectangle 
+    bl draw_rectangle
 // YELLOW
     mov x1, 239    
     mov x2, 94
@@ -609,28 +609,28 @@ draw_letras:
     mov x2, 94
     mov x3, 371  
     mov x4, 58
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle
 
     mov x1, 372  
     mov x2, 57
     mov x3, 391  
     mov x4, 46
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle
 
     mov x1, 372  
     mov x2, 106
     mov x3, 391
     mov x4, 95
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle
 
     mov x1, 392  
     mov x2, 94
     mov x3, 402  
     mov x4, 58
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_rectangle
 
 // 2
