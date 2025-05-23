@@ -19,6 +19,8 @@ main:
     bl draw_blue_rainbow
     bl draw_purple_rainbow
     bl draw_toes
+    bl draw_stars
+    bl draw_moon
     // Infinite Loop
 InfLoop:
     b InfLoop
