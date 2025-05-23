@@ -12,6 +12,7 @@ main:
 
 	bl draw_background
 	bl draw_body
+    bl draw_letras
     bl draw_red_rainbow
     bl draw_orange_rainbow
     bl draw_yellow_rainbow
@@ -20,7 +21,7 @@ main:
     bl draw_purple_rainbow
     bl draw_toes
     bl draw_stars
-    bl draw_moon
+    
     // Infinite Loop
 InfLoop:
     b InfLoop
