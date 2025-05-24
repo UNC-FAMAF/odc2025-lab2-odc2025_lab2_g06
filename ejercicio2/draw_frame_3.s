@@ -17,6 +17,7 @@
     .equ VIOLET, 0x6835ff
     .equ BLUE, 0x151D7E
 
+    .globl draw_background_3
     .globl draw_body_3
     .globl draw_rainbow_all_colors
     .globl draw_toes_3
@@ -24,7 +25,7 @@
     .globl draw_letters_3
     .globl draw_tail_3
 
-draw_background:
+draw_background_3:
 
     sub sp, sp, #48
     str x1, [sp]

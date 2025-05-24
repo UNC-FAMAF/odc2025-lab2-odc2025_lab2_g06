@@ -5,16 +5,33 @@
      .globl main
      
 main:
-	bl frame_1
+Loop:
+		bl draw_clean
+		bl frame_1
+		bl delay
 
-InfLoop:
+		bl draw_clean
 		bl frame_2
 		bl delay
+
+		bl draw_clean
 	    bl frame_3
 		bl delay
+
+		bl draw_clean
 		bl frame_5
 		bl delay
-		bl frame_1
 
-b InfLoop
+		bl draw_clean
+		bl frame_1
+		bl delay
+		
+		b Loop
+
+delay:
+    	movz x15, 0x8000, lsl 16
+delay_loop:
+    	sub x15, x15, 1
+    	cbnz x15, delay_loop
+    	ret
 
