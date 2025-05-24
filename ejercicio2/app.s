@@ -10,9 +10,11 @@ main:
 InfLoop:
 		bl frame_2
 		bl delay
-	   
-
+	    bl frame_3
 		bl delay
+		bl frame_5
+		bl delay
+		bl frame_1
 
 b InfLoop
 
