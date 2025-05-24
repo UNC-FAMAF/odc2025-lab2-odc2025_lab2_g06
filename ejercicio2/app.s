@@ -5,20 +5,15 @@
      .globl main
      
 main:
-	    bl frame_3		
+	bl frame_1
+
 InfLoop:
-		bl frame_2
-		bl delay
+	bl delay
+	bl frame_2
+	bl delay
+	bl frame_3
 	   
 
-		bl delay
 
-	b InfLoop
-
-delay:
-    	movz x15, 0x100, lsl 16
-delay_loop:
-    	sub x15, x15, 1
-    	cbnz x15, delay_loop
-    	ret
+b InfLoop
 

@@ -4,12 +4,24 @@
 .globl frame_4
 .globl frame_5
 
-
+frame_1:
+    bl draw_background
+    bl draw_body_1
+    bl draw_letters_1
+    bl draw_red_rainbow_1
+    bl draw_orange_rainbow_1
+    bl draw_yellow_rainbow_1
+    bl draw_green_rainbow_1
+    bl draw_blue_rainbow_1
+    bl draw_purple_rainbow_1
+    bl draw_toes_1
+    bl draw_stars_1
+ret
 
 frame_2:
     bl draw_background
 	bl draw_body_2
-    bl draw_letras_2
+    bl draw_letters_2
     bl draw_red_rainbow_2
     bl draw_orange_rainbow_2
     bl draw_yellow_rainbow_2

@@ -26,7 +26,7 @@
     .globl draw_purple_rainbow_2
     .globl draw_toes_2
     .globl draw_stars_2
-    .globl draw_letras_2
+    .globl draw_letters_2
     .globl draw_moon_2
     .globl draw_tail_2
 
@@ -451,7 +451,7 @@ draw_stars_2:
 //luna
 ret
 
-draw_letras_2:
+draw_letters_2:
 
     sub sp, sp, #48
     str x1, [sp]
