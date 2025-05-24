@@ -17,6 +17,20 @@
     .equ VIOLET, 0x6835ff
     .equ BLUE, 0x151D7E
 
+<<<<<<< HEAD
+    .globl draw_background 
+    .globl draw_body
+    .globl draw_red_rainbow_2
+    .globl draw_orange_rainbow_2
+    .globl draw_yellow_rainbow_2
+    .globl draw_green_rainbow_2
+    .globl draw_blue_rainbow_2
+    .globl draw_purple_rainbow_2
+    .globl draw_toes_2
+    .globl draw_stars_2
+    .globl draw_moon_2
+    .globl draw_tail_2
+=======
     .globl draw_background_5
     .globl draw_body
     .globl draw_red_rainbow_5
@@ -30,6 +44,7 @@
     .globl draw_letras_5
     .globl draw_body_5
     .globl draw_tail_5
+>>>>>>> 2d8f35ace098db72c284ad672479cd18de388872
 
 
 draw_stars_1:
@@ -1501,6 +1516,1002 @@ draw_body_1:
     bl draw_rectangle
 
     
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+
+
+//=====================> FRAME 3 <=======================//
+draw_stars_3:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+
+//estrella (2x1 pegadas, arriba arcoiris)
+    mov x1, 145       
+    mov x2, 150
+    mov x3, 150     
+    mov x4, 140
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 151       
+    mov x2, 155
+    mov x3, 160     
+    mov x4, 151
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 145       
+    mov x2, 166
+    mov x3, 150     
+    mov x4, 156
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 134       
+    mov x2, 155
+    mov x3, 144     
+    mov x4, 151
+    ldr x7, =WHITE
+    bl draw_rectangle
+    
+//estrella (2x1 pegadas, abajo arcoiris)
+    mov x1, 61
+    mov x2, 358
+    mov x3, 65    
+    mov x4, 348
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 66      
+    mov x2, 365
+    mov x3, 76    
+    mov x4, 359
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 61     
+    mov x2, 374
+    mov x3, 65    
+    mov x4, 364
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 50      
+    mov x2, 363
+    mov x3, 60    
+    mov x4, 359
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+// estrella (1x1, abajo de arcoiris)    
+    mov x1, 49 
+    mov x2, 407
+    mov x3, 54     
+    mov x4, 402
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 65      
+    mov x2, 423
+    mov x3, 70     
+    mov x4, 418
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 49      
+    mov x2, 439
+    mov x3, 54     
+    mov x4, 434
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 33       
+    mov x2, 423
+    mov x3, 38     
+    mov x4, 418
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+//esatrella 8 (abajo arcoiris) 
+    mov x1, 181 
+    mov x2, 376
+    mov x3, 186    
+    mov x4, 371
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 191     
+    mov x2, 382
+    mov x3, 196    
+    mov x4, 377
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 197     
+    mov x2, 392
+    mov x3, 202    
+    mov x4, 387
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 191      
+    mov x2, 403
+    mov x3, 196    
+    mov x4, 398
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 180 
+    mov x2, 409
+    mov x3, 185     
+    mov x4, 404
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 170     
+    mov x2, 403
+    mov x3, 175    
+    mov x4, 398
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 164     
+    mov x2, 392
+    mov x3, 169    
+    mov x4, 387
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 170      
+    mov x2, 382
+    mov x3, 175    
+    mov x4, 377
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+//estrella 5 (atras patas gato)
+    mov x1, 224      
+    mov x2, 453
+    mov x3, 229    
+    mov x4, 442
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 234 
+    mov x2, 463
+    mov x3, 245     
+    mov x4, 458
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 224    
+    mov x2, 463
+    mov x3, 229    
+    mov x4, 458
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 224     
+    mov x2, 477
+    mov x3, 229    
+    mov x4, 468
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 207      
+    mov x2, 463
+    mov x3, 218    
+    mov x4, 458
+    ldr x7, =WHITE
+    bl draw_rectangle   
+
+// estrellla junta (1x1 esq. inf der)
+    mov x1, 454 
+    mov x2, 388
+    mov x3, 459     
+    mov x4, 378
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 459    
+    mov x2, 394
+    mov x3, 469    
+    mov x4, 389
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 453     
+    mov x2, 405
+    mov x3, 458    
+    mov x4, 395
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 443      
+    mov x2, 394
+    mov x3, 453    
+    mov x4, 389
+    ldr x7, =WHITE
+    bl draw_rectangle  
+//
+
+    mov x1, 338 
+    mov x2, 414
+    mov x3, 343     
+    mov x4, 409
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 354    
+    mov x2, 430
+    mov x3, 359    
+    mov x4, 425
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 338     
+    mov x2, 446
+    mov x3, 343    
+    mov x4, 441
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 322      
+    mov x2, 430
+    mov x3, 327    
+    mov x4, 425
+    ldr x7, =WHITE
+    bl draw_rectangle   
+
+// estrella (1x1 separada, esq. inf der.)   
+    mov x1, 564 
+    mov x2, 406
+    mov x3, 569     
+    mov x4, 401
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 580    
+    mov x2, 422
+    mov x3, 585    
+    mov x4, 417
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 564    
+    mov x2, 438
+    mov x3, 569    
+    mov x4, 433
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 548      
+    mov x2, 422
+    mov x3, 553    
+    mov x4, 417
+    ldr x7, =WHITE
+    bl draw_rectangle 
+
+// estrella 8 (esq. inf. der.)
+    mov x1, 545
+    mov x2, 342
+    mov x3, 549     
+    mov x4, 338
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 556    
+    mov x2, 347
+    mov x3, 560    
+    mov x4, 343
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 561    
+    mov x2, 358
+    mov x3, 565    
+    mov x4, 354
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 556      
+    mov x2, 369
+    mov x3, 560    
+    mov x4, 365
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 545 
+    mov x2, 374
+    mov x3, 549     
+    mov x4, 370
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 535   
+    mov x2, 369
+    mov x3, 539    
+    mov x4, 365
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 529    
+    mov x2, 358
+    mov x3, 533 
+    mov x4, 354
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 534      
+    mov x2, 347
+    mov x3, 538    
+    mov x4, 343
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+// estrella (2x1 punto en medio, arrima der. cabeza gato)
+
+    mov x1, 448  
+    mov x2, 226
+    mov x3, 452    
+    mov x4, 216
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 459 
+    mov x2, 236
+    mov x3, 469     
+    mov x4, 232
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 448   
+    mov x2, 252
+    mov x3, 452    
+    mov x4, 242
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 432    
+    mov x2, 236
+    mov x3, 442 
+    mov x4, 232
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 448      
+    mov x2, 236
+    mov x3, 452    
+    mov x4, 232
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+// estrella (1x1 junta )
+    mov x1, 478
+    mov x2, 147
+    mov x3, 483     
+    mov x4, 142
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 483   
+    mov x2, 152
+    mov x3, 488    
+    mov x4, 147
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 478    
+    mov x2, 157
+    mov x3, 483 
+    mov x4, 152
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 472      
+    mov x2, 152
+    mov x3, 478    
+    mov x4, 147
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+// estrella (1x1 separados,al frente de gato)
+    mov x1, 587
+    mov x2, 195
+    mov x3, 592     
+    mov x4, 190
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 603   
+    mov x2, 211
+    mov x3, 608    
+    mov x4, 206
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 587    
+    mov x2, 227
+    mov x3, 592 
+    mov x4, 222
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 571      
+    mov x2, 211
+    mov x3, 576    
+    mov x4, 206
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+// etrella (1x1 junto, esq. sup. der.)
+    mov x1, 524
+    mov x2, 27
+    mov x3, 528     
+    mov x4, 23
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 529   
+    mov x2, 32
+    mov x3, 533    
+    mov x4, 28
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 524    
+    mov x2, 37
+    mov x3, 528 
+    mov x4, 32
+    ldr x7, =WHITE
+    bl draw_rectangle
+    mov x1, 519   
+    mov x2, 32
+    mov x3, 523    
+    mov x4, 28
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+
+//luna
+ret
+
+
+draw_purple_rainbow_2:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 335
+    mov x3, 15      
+    mov x4, 316
+    ldr x7, =VIOLET
+    bl draw_rectangle
+    mov x1, 16      
+    mov x2, 342
+    mov x3, 69     
+    mov x4, 323
+    ldr x7, =VIOLET
+    bl draw_rectangle
+    mov x1, 70       
+    mov x2, 335  
+    mov x3, 125      
+    mov x4, 316
+    ldr x7, =VIOLET
+    bl draw_rectangle
+    mov x1, 125       
+    mov x2, 342
+    mov x3, 179       
+    mov x4, 323
+    ldr x7, =VIOLET
+    bl draw_rectangle
+    mov x1, 180       
+    mov x2, 335 
+    mov x3, 228      
+    mov x4, 316
+    ldr x7, =VIOLET
+    bl draw_rectangle
+    mov x1, 229       
+    mov x2, 328 
+    mov x3, 235     
+    mov x4, 316
+    ldr x7, =VIOLET
+    bl draw_rectangle
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+draw_blue_rainbow_2:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 315
+    mov x3, 15      
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 322
+    mov x3, 69     
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 70       
+    mov x2, 315  
+    mov x3, 125      
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 124        
+    mov x2, 322
+    mov x3, 179       
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 180       
+    mov x2, 315 
+    mov x3, 221      
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 222       
+    mov x2, 315 
+    mov x3, 235     
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 236      
+    mov x2, 322
+    mov x3, 243    
+    mov x4, 309
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 223      
+    mov x2, 301
+    mov x3, 243    
+    mov x4, 295
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    mov x1, 236      
+    mov x2, 308
+    mov x3, 243    
+    mov x4, 302
+    ldr x7, =LIGHT_BLUE
+    bl draw_rectangle
+    
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+draw_green_rainbow_2:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 294 
+    mov x3, 15      
+    mov x4, 272
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 301
+    mov x3, 69     
+    mov x4, 280
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 294  
+    mov x3, 125      
+    mov x4, 272
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 124        
+    mov x2, 301 
+    mov x3, 179       
+    mov x4, 280
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 180       
+    mov x2, 294 
+    mov x3, 200      
+    mov x4, 272
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 201       
+    mov x2, 294 
+    mov x3, 208      
+    mov x4, 280
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 209       
+    mov x2, 294 
+    mov x3, 214      
+    mov x4, 288
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 215       
+    mov x2, 294 
+    mov x3, 228       
+    mov x4, 288
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 209        
+    mov x2, 287 
+    mov x3, 221      
+    mov x4, 281
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 201        
+    mov x2, 280
+    mov x3, 214       
+    mov x4, 273
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 229        
+    mov x2, 280
+    mov x3, 235      
+    mov x4, 273
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 287
+    mov x3, 243      
+    mov x4, 273
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 215        
+    mov x2, 280
+    mov x3, 228   
+    mov x4, 273
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 222        
+    mov x2, 287
+    mov x3, 235   
+    mov x4, 281
+    ldr x7, =GREEN
+    bl draw_rectangle
+    mov x1, 229        
+    mov x2, 294
+    mov x3, 243
+    mov x4, 288
+    ldr x7, =GREEN
+    bl draw_rectangle
+
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+draw_yellow_rainbow_2:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 272  
+    mov x3, 15       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 279 
+    mov x3, 69      
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 272  
+    mov x3, 125       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 126        
+    mov x2, 279 
+    mov x3, 180       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 181        
+    mov x2, 272 
+    mov x3, 200       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 201        
+    mov x2, 259 
+    mov x3, 236       
+    mov x4, 253
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 229        
+    mov x2, 266 
+    mov x3, 235       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 272 
+    mov x3, 243       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 201       
+    mov x2, 266 
+    mov x3, 228       
+    mov x4, 260
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 201        
+    mov x2, 272 
+    mov x3, 207       
+    mov x4, 266
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 222        
+    mov x2, 272 
+    mov x3, 235       
+    mov x4, 266
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    mov x1, 208        
+    mov x2, 272 
+    mov x3, 221      
+    mov x4, 266
+    ldr x7, =YELLOW
+    bl draw_rectangle
+    
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+draw_orange_rainbow_2:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 252  
+    mov x3, 15       
+    mov x4, 232
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 259 
+    mov x3, 69      
+    mov x4, 239
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 252  
+    mov x3, 125       
+    mov x4, 232
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 126        
+    mov x2, 259 
+    mov x3, 180       
+    mov x4, 239
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 181        
+    mov x2, 252 
+    mov x3, 235       
+    mov x4, 232
+    ldr x7, =ORANGE
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 259 
+    mov x3, 243       
+    mov x4, 239
+    ldr x7, =ORANGE
+    bl draw_rectangle
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+draw_red_rainbow_2:
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+    
+    mov x1, 0        
+    mov x2, 231  
+    mov x3, 15       
+    mov x4, 211
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 16        
+    mov x2, 238 
+    mov x3, 69      
+    mov x4, 219
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 70        
+    mov x2, 231  
+    mov x3, 125       
+    mov x4, 211
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 126        
+    mov x2, 238 
+    mov x3, 180       
+    mov x4, 219
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 181        
+    mov x2, 231 
+    mov x3, 235       
+    mov x4, 212
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 236        
+    mov x2, 238 
+    mov x3, 243       
+    mov x4, 219
+    ldr x7, =RED
+    bl draw_rectangle
+    mov x1, 243        
+    mov x2, 224 
+    mov x3, 250      
+    mov x4, 219
+    ldr x7, =RED
+    bl draw_rectangle
+
+
+
+    ldr x30, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #48
+ret
+
+draw_toes_2:
+
+    sub sp, sp, #48
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]  
+    str x7, [sp, #32]
+    str x30, [sp, #40]
+
+    mov x1, 228      
+    mov x2, 349
+    mov x3, 235     
+    mov x4, 329
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 235      
+    mov x2, 349
+    mov x3, 256     
+    mov x4, 344
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 250      
+    mov x2, 343
+    mov x3, 263     
+    mov x4, 335
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 236      
+    mov x2, 343
+    mov x3, 249     
+    mov x4, 329
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 250      
+    mov x2, 336
+    mov x3, 256     
+    mov x4, 329
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 271      
+    mov x2, 349
+    mov x3, 276     
+    mov x4, 336
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 277      
+    mov x2, 349
+    mov x3, 291     
+    mov x4, 343
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 292      
+    mov x2, 343
+    mov x3, 298     
+    mov x4, 336
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 277      
+    mov x2, 343
+    mov x3, 291     
+    mov x4, 336
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 333      
+    mov x2, 343
+    mov x3, 339     
+    mov x4, 336
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 340      
+    mov x2, 349
+    mov x3, 360     
+    mov x4, 344
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 354      
+    mov x2, 343
+    mov x3, 360    
+    mov x4, 336
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 340      
+    mov x2, 343
+    mov x3, 353     
+    mov x4, 336
+    ldr x7, =GRAY
+    bl draw_rectangle
+    mov x1, 368      
+    mov x2, 343
+    mov x3, 373     
+    mov x4, 336
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 374      
+    mov x2, 349
+    mov x3, 388     
+    mov x4, 343
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 389      
+    mov x2, 343
+    mov x3, 395     
+    mov x4, 336
+    ldr x7, =BLACK
+    bl draw_rectangle
+    mov x1, 374      
+    mov x2, 343
+    mov x3, 388     
+    mov x4, 336
+    ldr x7, =GRAY
+    bl draw_rectangle
+    
+
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
