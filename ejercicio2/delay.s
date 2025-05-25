@@ -2,14 +2,15 @@
 
 delay:
     sub sp, sp, #16
-    str x30, [sp, #8]    // Guarda LR (x30)
-    str x19, [sp]        // Guarda x19 (registro preservado)
+    str x30, [sp, #8]    
+    str x19, [sp]        
 
-    mov x19, 0x000F0000  // ★ Valor más manejable (ajustar según necesidad)
+    mov x19, 0x0A000000  
+    //mov x19, 0x20000000  
     
-1:  // Etiqueta local para el loop
+1: 
     sub x19, x19, #1
-    cbnz x19, 1b         // Branch backward to local label
+    cbnz x19, 1b        
 
     ldr x19, [sp]
     ldr x30, [sp, #8]

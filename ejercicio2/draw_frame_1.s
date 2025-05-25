@@ -17,7 +17,7 @@
     .equ VIOLET, 0x6835ff
     .equ BLUE, 0x151D7E
 
-    .globl draw_background
+    .globl draw_background_1
     .globl draw_body_1
     .globl draw_red_rainbow_1
     .globl draw_orange_rainbow_1
@@ -450,7 +450,7 @@ draw_stars_1:
 //luna
 ret
 
-draw_background:
+draw_background_1:
     sub sp, sp, #48
     str x1, [sp]
     str x2, [sp, #8]
@@ -459,10 +459,10 @@ draw_background:
     str x7, [sp, #32]
     str x30, [sp, #40]
 
-    mov x1, 0       
-    mov x2, 0    
-    mov x3, SCREEN_WIDTH        
-    mov x4, SCREEN_HEIGH
+    mov x1, 1       
+    mov x2, 354    
+    mov x3, 426        
+    mov x4, 204
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 

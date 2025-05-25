@@ -5,33 +5,42 @@
      .globl main
      
 main:
+	bl draw_clean
 Loop:
-		bl draw_clean
+	sub sp, sp, #56
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x4, [sp, #24]
+    str x7, [sp, #32]
+	str x19, [sp, #40]
+    str x30, [sp, #48]
+
 		bl frame_1
 		bl delay
 
-		bl draw_clean
 		bl frame_2
 		bl delay
 
-		bl draw_clean
 	    bl frame_3
 		bl delay
 
-		bl draw_clean
 		bl frame_5
 		bl delay
 
-		bl draw_clean
 		bl frame_1
 		bl delay
 		
 		b Loop
 
-delay:
-    	movz x15, 0x8000, lsl 16
-delay_loop:
-    	sub x15, x15, 1
-    	cbnz x15, delay_loop
-    	ret
+	ldr x30, [sp, #48]
+	ldr x19, [sp, #40]
+    ldr x7, [sp, #32]
+    ldr x4, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #56
+
+
 

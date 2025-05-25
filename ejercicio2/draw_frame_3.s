@@ -35,10 +35,10 @@ draw_background_3:
     str x7, [sp, #32]
     str x30, [sp, #40]
 
-    mov x1, 0       
-    mov x2, 0    
-    mov x3, SCREEN_WIDTH        
-    mov x4, SCREEN_HEIGH
+    mov x1, 1       
+    mov x2, 354    
+    mov x3, 426        
+    mov x4, 204
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
