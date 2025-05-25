@@ -21,7 +21,6 @@ frame_2:
     bl draw_tail_2
 ret
 
-<<<<<<< HEAD
 
 frame_5:
      bl draw_background_5
@@ -39,15 +38,5 @@ frame_5:
 ret
 frame_3:
 
-=======
-frame_3: 
-    bl draw_background
-    bl draw_stars_3
-    bl draw_letters_3
-    bl draw_rainbow_all_colors
-    bl draw_body_3
-    bl draw_toes_3
-    bl draw_tail_3
->>>>>>> 2d8f35ace098db72c284ad672479cd18de388872
 
 ret
