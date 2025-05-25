@@ -32,6 +32,7 @@ frame_1:
     bl draw_purple_rainbow_1
     bl draw_toes_1
     bl draw_stars_1
+    bl draw_rainbow_circles_1
 
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
@@ -87,6 +88,7 @@ frame_3:
     bl draw_body_3
     bl draw_toes_3
     bl draw_tail_3
+    bl draw_rainbow_circles_3
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
