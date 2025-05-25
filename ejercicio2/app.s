@@ -18,17 +18,21 @@ Loop:
 
 		bl frame_1
 		bl delay
+	//bl draw_clean
 
 		bl frame_2
 		bl delay
-
-	    bl frame_3
+ 
+	//bl draw_clean
+ 	    bl frame_3
 		bl delay
 
+	//bl draw_clean
 		//Aca va tu frame emi
 
 		bl frame_5
-		bl delay
+		bl delay 
+	//bl draw_clean 
 		
 		b Loop
 

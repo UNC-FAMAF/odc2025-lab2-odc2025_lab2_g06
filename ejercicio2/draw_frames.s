@@ -64,6 +64,7 @@ frame_2:
     bl draw_toes_2
     bl draw_stars_2
     bl draw_tail_2
+    bl draw_rainbow_circles_2
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]

@@ -409,6 +409,154 @@ draw_stars:
     ldr x7, =WHITE
     bl draw_rectangle
 
+    // nuevas estrellas //
+    mov x1, 83
+    mov x2, 26
+    mov x3, 88   
+    mov x4, 21
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 93
+    mov x2, 31
+    mov x3, 99  
+    mov x4, 26
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 99
+    mov x2, 42
+    mov x3, 104  
+    mov x4, 37
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 93
+    mov x2, 53
+    mov x3, 99   
+    mov x4, 47
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 83
+    mov x2, 58
+    mov x3, 88   
+    mov x4, 53
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 72
+    mov x2, 53
+    mov x3, 78   
+    mov x4, 47
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 67
+    mov x2, 42
+    mov x3, 72   
+    mov x4, 37
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 72
+    mov x2, 31
+    mov x3, 77   
+    mov x4, 26
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 60
+    mov x2, 121
+    mov x3, 65   
+    mov x4, 116
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 65
+    mov x2, 116
+    mov x3, 71   
+    mov x4, 111
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 71
+    mov x2, 121
+    mov x3, 76   
+    mov x4, 116
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 65
+    mov x2, 126
+    mov x3, 71   
+    mov x4, 121
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 551
+    mov x2, 108
+    mov x3, 562   
+    mov x4, 103
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 567
+    mov x2, 97
+    mov x3, 572   
+    mov x4, 87
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 567
+    mov x2, 108
+    mov x3, 572   
+    mov x4, 103
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 578
+    mov x2, 108
+    mov x3, 588   
+    mov x4, 103
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 567
+    mov x2, 124
+    mov x3, 572   
+    mov x4, 114
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 312
+    mov x2, 158
+    mov x3, 317   
+    mov x4, 153
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 327
+    mov x2, 142
+    mov x3, 333   
+    mov x4, 137
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 344
+    mov x2, 158
+    mov x3, 348   
+    mov x4, 153
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 327
+    mov x2, 174
+    mov x3, 333   
+    mov x4, 169
+    ldr x7, =WHITE
+    bl draw_rectangle
+
 
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
@@ -1708,9 +1856,6 @@ draw_body:
     mov x4, 288
     ldr x7, =WHITE
     bl draw_rectangle
-
-    
-
 
     
     ldr x30, [sp, #40]

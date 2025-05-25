@@ -30,6 +30,7 @@
     .globl draw_letters_2
     .globl draw_moon_2
     .globl draw_tail_2
+    .globl draw_rainbow_circles_2
 
 //=====================> FRAME 2 <=======================//
 
@@ -447,7 +448,7 @@ draw_stars_2:
     ldr x1, [sp]
     add sp, sp, #48
 
-//luna
+
 ret
 
 
@@ -1839,7 +1840,7 @@ draw_body_2:
 ret
 
 
-draw_rainbow_circles_1:
+draw_rainbow_circles_2:
 
     sub sp, sp, #40
     str x1, [sp]
