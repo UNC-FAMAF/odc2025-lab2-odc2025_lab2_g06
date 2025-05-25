@@ -30,10 +30,7 @@
     .globl draw_letras_5
     .globl draw_body_5
     .globl draw_tail_5
-
-
-
-
+    .globl draw_rainbow_circles_5
 
 
 draw_background_5:
@@ -1727,4 +1724,134 @@ draw_tail_5:
     ldr x1, [sp]
     add sp, sp, #48
 
+ret
+
+draw_rainbow_circles_5:
+    sub sp, sp, #40
+    str x1, [sp]
+    str x2, [sp, #8]
+    str x3, [sp, #16]
+    str x7, [sp, #24]
+    str x30, [sp, #32]
+
+    mov x1, 20
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =RED
+    bl draw_circle
+
+    mov x1, 53
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =ORANGE
+    bl draw_circle
+
+    mov x1, 86
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =YELLOW
+    bl draw_circle
+
+    mov x1, 119
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =GREEN
+    bl draw_circle
+
+    mov x1, 152
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =LIGHT_BLUE
+    bl draw_circle
+
+    mov x1, 185
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =VIOLET
+    bl draw_circle
+
+    mov x1, 218
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =PINK
+    bl draw_circle
+
+    mov x1, 251
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =RED
+    bl draw_circle
+
+    mov x1, 284
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =ORANGE
+    bl draw_circle
+
+    mov x1, 317
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =YELLOW
+    bl draw_circle
+
+    mov x1, 350
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =GREEN
+    bl draw_circle
+
+    mov x1, 383
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =LIGHT_BLUE
+    bl draw_circle
+
+    mov x1, 416
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =VIOLET
+    bl draw_circle
+
+    mov x1, 449
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =PINK
+    bl draw_circle
+
+    mov x1, 482
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =RED
+    bl draw_circle
+
+    mov x1, 515
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =ORANGE
+    bl draw_circle
+
+    mov x1, 548
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =YELLOW
+    bl draw_circle
+
+    mov x1, 581
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =GREEN
+    bl draw_circle
+
+    mov x1, 614
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =LIGHT_BLUE
+    bl draw_circle
+
+    ldr x30, [sp, #32]
+    ldr x7, [sp, #24]
+    ldr x3, [sp, #16]
+    ldr x2, [sp, #8]
+    ldr x1, [sp]
+    add sp, sp, #40
 ret
