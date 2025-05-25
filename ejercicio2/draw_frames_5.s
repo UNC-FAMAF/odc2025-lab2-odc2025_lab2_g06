@@ -944,38 +944,7 @@ draw_stars_5:
     mov x4, 377
     ldr x7, =WHITE
     bl draw_rectangle
-
-//estrella 5 (atras patas gato)
-    mov x1, 224      
-    mov x2, 453
-    mov x3, 229    
-    mov x4, 442
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 234 
-    mov x2, 463
-    mov x3, 245     
-    mov x4, 458
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 224    
-    mov x2, 463
-    mov x3, 229    
-    mov x4, 458
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 224     
-    mov x2, 477
-    mov x3, 229    
-    mov x4, 468
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 207      
-    mov x2, 463
-    mov x3, 218    
-    mov x4, 458
-    ldr x7, =WHITE
-    bl draw_rectangle   
+   
 
 // estrellla junta (1x1 esq. inf der)
     mov x1, 454 
