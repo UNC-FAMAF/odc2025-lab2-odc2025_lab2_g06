@@ -5,7 +5,7 @@ delay:
     str x30, [sp, #8]    
     str x19, [sp]        
 
-    mov x19, 0x0A000000  
+    mov x19, 0x08000000  
     //mov x19, 0x20000000  
     
 1: 

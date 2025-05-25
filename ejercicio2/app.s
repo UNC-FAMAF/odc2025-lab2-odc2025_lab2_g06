@@ -25,10 +25,9 @@ Loop:
 	    bl frame_3
 		bl delay
 
-		bl frame_5
-		bl delay
+		//Aca va tu frame emi
 
-		bl frame_1
+		bl frame_5
 		bl delay
 		
 		b Loop
