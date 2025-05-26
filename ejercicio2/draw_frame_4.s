@@ -1015,7 +1015,7 @@ draw_body_4:
     str x7, [sp, #32]
     str x30, [sp, #40]
 
-//========================> CONTORNO TOSTADA <=====================// //preguntar si cambia
+//========================> CONTORNO TOSTADA <=====================//
     mov x1, 257       
     mov x2, 218    
     mov x3, 374       
@@ -1084,7 +1084,7 @@ draw_body_4:
     mov x4, 219
     ldr x7, =BLACK
     bl draw_rectangle  
-//========================> DULCE TOSTADA <=====================// // preguntar si cambia
+//========================> DULCE TOSTADA <=====================// 
     mov x1, 257       
     mov x2, 322    
     mov x3, 374       
@@ -1470,7 +1470,7 @@ draw_body_4:
     add sp, sp, #48
 ret
 
-draw_tail_4: //cambiar 
+draw_tail_4: //cambiado
 
     sub sp, sp, #48
     str x1, [sp]
@@ -1480,73 +1480,73 @@ draw_tail_4: //cambiar
     str x7, [sp, #32]
     str x30, [sp, #40]
 
-    mov x1, 196  
-    mov x2, 306
-    mov x3, 201  
-    mov x4, 295
+    mov x1, 229
+    mov x2, 287
+    mov x3, 243  
+    mov x4, 281
     ldr x7, =BLACK
     bl draw_rectangle
 
-    mov x1, 202  
-    mov x2, 300
-    mov x3, 205  
-    mov x4, 295
-    ldr x7, =BLACK
-    bl draw_rectangle
-
-    mov x1, 206  
+    mov x1, 215  
     mov x2, 294
-    mov x3, 243  
-    mov x4, 290
+    mov x3, 228  
+    mov x4, 288
     ldr x7, =BLACK
     bl draw_rectangle
 
-    mov x1, 237  
-    mov x2, 289
-    mov x3, 243  
-    mov x4, 284
+    mov x1, 208  
+    mov x2, 301
+    mov x3, 214  
+    mov x4, 295
     ldr x7, =BLACK
     bl draw_rectangle
 
-    mov x1, 202  
-    mov x2, 311
-    mov x3, 236  
-    mov x4, 307
+    mov x1, 201  
+    mov x2, 315
+    mov x3, 207  
+    mov x4, 302
+    ldr x7, =BLACK
+    bl draw_rectangle
+
+    mov x1, 208  
+    mov x2, 322
+    mov x3, 221  
+    mov x4, 316
+    ldr x7, =BLACK
+    bl draw_rectangle
+
+    mov x1, 222  
+    mov x2, 315
+    mov x3, 228  
+    mov x4, 309
+    ldr x7, =BLACK
+    bl draw_rectangle
+
+    mov x1, 222  
+    mov x2, 308
+    mov x3, 243  
+    mov x4, 302
     ldr x7, =BLACK
     bl draw_rectangle
 
     mov x1, 229  
-    mov x2, 306
-    mov x3, 236  
-    mov x4, 303
-    ldr x7, =BLACK
-    bl draw_rectangle
-
-    mov x1, 237  
-    mov x2, 307
+    mov x2, 294
     mov x3, 243  
-    mov x4, 303
-    ldr x7, =BLACK
-    bl draw_rectangle
-
-    mov x1, 202  
-    mov x2, 306
-    mov x3, 228  
-    mov x4, 301
+    mov x4, 288
     ldr x7, =GRAY
     bl draw_rectangle
 
-    mov x1, 206  
-    mov x2, 300
-    mov x3, 228  
+    mov x1, 215  
+    mov x2, 301
+    mov x3, 243  
     mov x4, 295
     ldr x7, =GRAY
     bl draw_rectangle
 
-    mov x1, 229   
-    mov x2, 302
-    mov x3, 243  
-    mov x4, 295
+    mov x1, 208   
+    mov x2, 315
+    mov x3, 221  
+    mov x4, 302
     ldr x7, =GRAY
     bl draw_rectangle
 
