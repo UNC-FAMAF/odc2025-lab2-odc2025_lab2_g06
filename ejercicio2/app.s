@@ -28,7 +28,6 @@ Loop:
 		bl delay
 
 	//bl draw_clean
-		//Aca va tu frame emi
 		bl frame_4
 		bl delay
 
