@@ -61,7 +61,10 @@ draw_stars_4:
     str x4, [sp, #24]
     str x7, [sp, #32]
     str x30, [sp, #40]
+//----------ESTRELLAS EN MOVIMIENTO----------//
 
+//----------   ----------//
+//----------ESTRELLAS ANTIGUAS----------//
 //estrella (2x1 pegadas, arriba arcoiris)
     mov x1, 145       
     mov x2, 150

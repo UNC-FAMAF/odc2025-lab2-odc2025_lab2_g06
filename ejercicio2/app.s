@@ -32,9 +32,9 @@ Loop:
 		bl delay
 
 
-		bl frame_5
+	//	bl frame_5
 		bl delay 
-	//bl draw_clean 
+		bl draw_clean 
 		
 		b Loop
 
