@@ -36,7 +36,7 @@ Loop:
 	bl clean_stars_frame4
 	bl frame_5
 	bl delay 
-		
+
 	b Loop
 
 	ldr x30, [sp, #48]

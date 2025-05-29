@@ -144,6 +144,7 @@ sub sp, sp, #48
      bl draw_toes_5
      bl draw_body_5
 	 bl draw_tail_5
+     bl draw_rainbow_circles_5
      ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
