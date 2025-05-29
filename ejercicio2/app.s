@@ -28,8 +28,8 @@ Loop:
 		bl delay
 
 	//bl draw_clean
-	//	bl frame_4
-	//	bl delay
+		bl frame_4
+		bl delay
 
 
 	//	bl frame_5
