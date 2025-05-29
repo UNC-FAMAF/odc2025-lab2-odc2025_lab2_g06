@@ -27,7 +27,6 @@
     .globl draw_rainbow_circles_3
 
 draw_background_3:
-
     sub sp, sp, #48
     str x1, [sp]
     str x2, [sp, #8]
@@ -131,37 +130,6 @@ draw_stars_3:
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
-// 4
-
-    mov x1, 292
-    mov x2, 109
-    mov x3, 329
-    mov x4, 104
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 308
-    mov x2, 125
-    mov x3, 313
-    mov x4, 88
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 303
-    mov x2, 114
-    mov x3, 318
-    mov x4, 99
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-    mov x1, 308
-    mov x2, 109
-    mov x3, 313
-    mov x4, 104
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-
 // 5 
 
     mov x1, 390
@@ -234,48 +202,41 @@ draw_stars_3:
 // 8
 //pasa por debajo del gato 
 
-// 9 
-
-    mov x1, 420
-    mov x2, 53
-    mov x3, 424
-    mov x4, 18
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 410
-    mov x2, 49
-    mov x3, 414
-    mov x4, 23
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 431
-    mov x2, 49
-    mov x3, 435
-    mov x4, 23
-    ldr x7, =WHITE
-    bl draw_rectangle
+// 9 EDITADAAAAAA
 
     mov x1, 404
     mov x2, 38
     mov x3, 441
-    mov x4, 34
+    mov x4, 33
     ldr x7, =WHITE
     bl draw_rectangle
 
     mov x1, 409
-    mov x2, 44
+    mov x2, 28
     mov x3, 436
-    mov x4, 28
+    mov x4, 23
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 410
+    mov x2, 38
+    mov x3, 435
+    mov x4, 29
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
     mov x1, 415
-    mov x2, 49
+    mov x2, 29
     mov x3, 430
     mov x4, 23
     ldr x7, =DARK_BLUE
+    bl draw_rectangle
+
+    mov x1, 420
+    mov x2, 23
+    mov x3, 425
+    mov x4, 18
+    ldr x7, =WHITE
     bl draw_rectangle
 
 // 10
@@ -301,48 +262,34 @@ draw_stars_3:
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
-// 11
+// 11 EDITADA
 
-    mov x1, 402
-    mov x2, 269
-    mov x3, 438
-    mov x4, 265
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 407
-    mov x2, 279
-    mov x3, 411
-    mov x4, 254
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 429
-    mov x2, 279
+    mov x1, 428
+    mov x2, 280
     mov x3, 433
     mov x4, 254
     ldr x7, =WHITE
     bl draw_rectangle
 
-    mov x1, 418
-    mov x2, 285
-    mov x3, 422
-    mov x4, 249
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 407
+    mov x1, 428
     mov x2, 274
     mov x3, 433
-    mov x4, 259
+    mov x4, 260
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
-    mov x1, 412
-    mov x2, 280
-    mov x3, 428
-    mov x4, 254
-    ldr x7, =DARK_BLUE
+    mov x1, 433
+    mov x2, 269
+    mov x3, 438
+    mov x4, 264
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 419
+    mov x2, 253
+    mov x3, 424
+    mov x4, 248
+    ldr x7, =WHITE
     bl draw_rectangle
 
 // 12
@@ -391,49 +338,43 @@ draw_stars_3:
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
-// 14
+// 14 EDITADA
 
-    mov x1, 247
-    mov x2, 358
-    mov x3, 283
-    mov x4, 354
+    mov x1, 246
+    mov x2, 361
+    mov x3, 285
+    mov x4, 356
     ldr x7, =WHITE
     bl draw_rectangle
 
     mov x1, 252
-    mov x2, 369
-    mov x3, 256
-    mov x4, 343
+    mov x2, 370
+    mov x3, 279
+    mov x4, 365
     ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 252
+    mov x2, 361
+    mov x3, 279
+    mov x4, 356
+    ldr x7, =DARK_BLUE
+    bl draw_rectangle
+
+    mov x1, 258
+    mov x2, 370
+    mov x3, 273
+    mov x4, 365
+    ldr x7, =DARK_BLUE
     bl draw_rectangle
 
     mov x1, 263
-    mov x2, 374
-    mov x3, 267
-    mov x4, 338
+    mov x2, 375
+    mov x3, 268
+    mov x4, 370
     ldr x7, =WHITE
     bl draw_rectangle
 
-    mov x1, 274
-    mov x2, 369
-    mov x3, 278
-    mov x4, 343
-    ldr x7, =WHITE
-    bl draw_rectangle
-
-    mov x1, 252
-    mov x2, 364
-    mov x3, 278
-    mov x4, 348
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-    mov x1, 257
-    mov x2, 369
-    mov x3, 273
-    mov x4, 343
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
 
 // 15
 
@@ -569,553 +510,6 @@ draw_stars_3:
     ldr x7, =DARK_BLUE
     bl draw_rectangle
 
-
-//----------   ----------//
-//----------ESTRELLAS ANTIGUAS(DEL FRAME 2)----------//
-
-    //ESTRELLA1
-    mov x1, 538   
-    mov x2, 113
-    mov x3, 543     
-    mov x4, 108
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 543       
-    mov x2, 119
-    mov x3, 548     
-    mov x4, 114
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 538       
-    mov x2, 124
-    mov x3, 543     
-    mov x4, 119
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 532       
-    mov x2, 119
-    mov x3, 537     
-    mov x4, 114
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    
-//estrella 2
-    mov x1, 588
-    mov x2, 357
-    mov x3, 592    
-    mov x4, 347
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 593      
-    mov x2, 362
-    mov x3, 603   
-    mov x4, 358
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 588    
-    mov x2, 373
-    mov x3, 592   
-    mov x4, 363
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 577     
-    mov x2, 362
-    mov x3, 587  
-    mov x4, 358
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-// estrella 3    
-    mov x1, 398
-    mov x2, 146
-    mov x3, 402    
-    mov x4, 142
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 404     
-    mov x2, 151
-    mov x3, 408    
-    mov x4, 147
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 399     
-    mov x2, 156
-    mov x3, 403    
-    mov x4, 152
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 393      
-    mov x2, 151
-    mov x3, 397    
-    mov x4, 147
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-//esatrella 4
-    mov x1, 574
-    mov x2, 255
-    mov x3, 578    
-    mov x4, 251
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 585
-    mov x2, 260
-    mov x3, 589    
-    mov x4, 256
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 590     
-    mov x2, 271
-    mov x3, 594    
-    mov x4, 267
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 585      
-    mov x2, 281
-    mov x3, 589    
-    mov x4, 277
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 574
-    mov x2, 287
-    mov x3, 578   
-    mov x4, 283
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 563     
-    mov x2, 282
-    mov x3, 566    
-    mov x4, 278
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 558     
-    mov x2, 271
-    mov x3, 562    
-    mov x4, 267
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 564      
-    mov x2, 260
-    mov x3, 568    
-    mov x4, 256
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-  
-
-// estrellla 5
-    mov x1, 45
-    mov x2, 152
-    mov x3, 49     
-    mov x4, 142
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 50    
-    mov x2, 157
-    mov x3, 60    
-    mov x4, 153
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 45     
-    mov x2, 168
-    mov x3, 49    
-    mov x4, 158
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 34      
-    mov x2, 157
-    mov x3, 44    
-    mov x4, 153
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle  
-// estrellas 6
-
-    mov x1, 340 
-    mov x2, 388
-    mov x3, 344     
-    mov x4, 378
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 345    
-    mov x2, 393
-    mov x3, 355    
-    mov x4, 389
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 340     
-    mov x2, 404
-    mov x3, 344    
-    mov x4, 394
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 329      
-    mov x2, 393
-    mov x3, 339    
-    mov x4, 389
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle   
-
-// estrella 7  
-    mov x1, 101 
-    mov x2, 28
-    mov x3, 105     
-    mov x4, 24
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 117   
-    mov x2, 44
-    mov x3, 121    
-    mov x4, 40
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 101    
-    mov x2, 60
-    mov x3, 105    
-    mov x4, 56
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 85      
-    mov x2, 44
-    mov x3, 89    
-    mov x4, 40
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle 
-
-// estrella 8 
-    mov x1, 569
-    mov x2, 23
-    mov x3, 574     
-    mov x4, 18
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 579    
-    mov x2, 28
-    mov x3, 585    
-    mov x4, 23
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 586    
-    mov x2, 38
-    mov x3, 590    
-    mov x4, 34
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 580      
-    mov x2, 49
-    mov x3, 585    
-    mov x4, 44
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 569 
-    mov x2, 55
-    mov x3, 574     
-    mov x4, 50
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 559  
-    mov x2, 49
-    mov x3, 563    
-    mov x4, 45
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 553    
-    mov x2, 39
-    mov x3, 558 
-    mov x4, 34
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 559      
-    mov x2, 27
-    mov x3, 563    
-    mov x4, 23
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-// estrella 9
-
-    mov x1, 460 
-    mov x2, 100
-    mov x3, 465    
-    mov x4, 90
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 460 
-    mov x2, 111
-    mov x3, 465     
-    mov x4, 106
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 471  
-    mov x2, 111
-    mov x3, 481    
-    mov x4, 106
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 460    
-    mov x2, 127
-    mov x3, 465 
-    mov x4, 117
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 444      
-    mov x2, 111
-    mov x3, 454    
-    mov x4, 106
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-// estrella 10
-    mov x1, 204
-    mov x2, 414
-    mov x3, 208     
-    mov x4, 410
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 220   
-    mov x2, 430
-    mov x3, 224    
-    mov x4, 426
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 204    
-    mov x2, 446
-    mov x3, 208 
-    mov x4, 442
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 188      
-    mov x2, 430
-    mov x3, 192    
-    mov x4, 426
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-// estrella 11
-    mov x1, 436
-    mov x2, 404
-    mov x3, 440     
-    mov x4, 400
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 452   
-    mov x2, 420
-    mov x3, 456    
-    mov x4, 416
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 436    
-    mov x2, 436
-    mov x3, 440 
-    mov x4, 432
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 420      
-    mov x2, 420
-    mov x3, 424    
-    mov x4, 416
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-// etrella 12
-    mov x1, 423
-    mov x2, 342
-    mov x3, 427    
-    mov x4, 338
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 434   
-    mov x2, 347
-    mov x3, 438    
-    mov x4, 343
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 439    
-    mov x2, 358
-    mov x3, 443 
-    mov x4, 354
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 434 
-    mov x2, 369
-    mov x3, 438    
-    mov x4, 365
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 423
-    mov x2, 374
-    mov x3, 427     
-    mov x4, 370
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 413   
-    mov x2, 369
-    mov x3, 417    
-    mov x4, 365
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 408    
-    mov x2, 358
-    mov x3, 412 
-    mov x4, 354
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 413   
-    mov x2, 347
-    mov x3, 417    
-    mov x4, 343
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-// etrella 13
-    mov x1, 35
-    mov x2, 377
-    mov x3, 39     
-    mov x4, 373
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 46   
-    mov x2, 382
-    mov x3, 50    
-    mov x4, 378
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 51    
-    mov x2, 393
-    mov x3, 55 
-    mov x4, 389
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 46   
-    mov x2, 403
-    mov x3, 50    
-    mov x4, 399
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 35
-    mov x2, 409
-    mov x3, 39     
-    mov x4, 405
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 24   
-    mov x2, 403
-    mov x3, 28    
-    mov x4, 399
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 19    
-    mov x2, 393
-    mov x3, 23 
-    mov x4, 388
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 24   
-    mov x2, 382
-    mov x3, 28    
-    mov x4, 378
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-// etrella 14
-    mov x1, 232
-    mov x2, 140
-    mov x3, 236     
-    mov x4, 136
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 248   
-    mov x2, 156
-    mov x3, 252    
-    mov x4, 152
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 232    
-    mov x2, 172
-    mov x3, 236 
-    mov x4, 168
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 216   
-    mov x2, 156
-    mov x3, 220    
-    mov x4, 152
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-// etrella 15
-    mov x1, 470
-    mov x2, 195
-    mov x3, 475     
-    mov x4, 190
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 486   
-    mov x2, 211
-    mov x3, 491    
-    mov x4, 206
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 470    
-    mov x2, 227
-    mov x3, 475 
-    mov x4, 222
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 454   
-    mov x2, 211
-    mov x3, 459    
-    mov x4, 206
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-// etrella 16
-    mov x1, 391
-    mov x2, 27
-    mov x3, 395     
-    mov x4, 23
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 396   
-    mov x2, 32
-    mov x3, 400    
-    mov x4, 28
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 391    
-    mov x2, 38
-    mov x3, 395 
-    mov x4, 33
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 386   
-    mov x2, 32
-    mov x3, 390    
-    mov x4, 28
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-// etrella (1x1 junto, esq. sup. der.)
-    mov x1, 571
-    mov x2, 396
-    mov x3, 575     
-    mov x4, 392
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 587   
-    mov x2, 412
-    mov x3, 591    
-    mov x4, 408
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 571    
-    mov x2, 428
-    mov x3, 575 
-    mov x4, 424
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-    mov x1, 555   
-    mov x2, 412
-    mov x3, 559    
-    mov x4, 408
-    ldr x7, =DARK_BLUE
-    bl draw_rectangle
-
-
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
@@ -1123,8 +517,6 @@ draw_stars_3:
     ldr x2, [sp, #8]
     ldr x1, [sp]
     add sp, sp, #48
-
-
 
 ret
 

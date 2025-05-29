@@ -16,27 +16,28 @@ Loop:
 	str x19, [sp, #40]
     str x30, [sp, #48]
 
-		bl frame_1
-		bl delay
-	//bl draw_clean
+	bl clean_stars_frame5
+	bl frame_1
+	bl delay
 
-		bl frame_2
-		bl delay
+	bl clean_stars_frame1
+	bl frame_2
+	bl delay
  
-	//bl draw_clean
- 		bl frame_3
-		bl delay
+	bl clean_stars_frame2
+ 	bl frame_3
+	
+	bl delay
 
-	//bl draw_clean
-		bl frame_4
-		bl delay
+	bl clean_stars_frame3
+	bl frame_4
+	bl delay
 
-
-	//	bl frame_5
-	//	bl delay 
-	//	bl draw_clean 
+	bl clean_stars_frame4
+	bl frame_5
+	bl delay 
 		
-		b Loop
+	b Loop
 
 	ldr x30, [sp, #48]
 	ldr x19, [sp, #40]

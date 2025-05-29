@@ -10,7 +10,6 @@
 .globl frame_3
 .globl frame_4
 .globl frame_5
-.globl draw_clean
 
 frame_1:
     sub sp, sp, #48
