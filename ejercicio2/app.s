@@ -24,17 +24,17 @@ Loop:
 		bl delay
  
 	//bl draw_clean
- 	    bl frame_3
+ 		bl frame_3
 		bl delay
 
 	//bl draw_clean
-		bl frame_4
-		bl delay
+	//	bl frame_4
+	//	bl delay
 
 
 	//	bl frame_5
-		bl delay 
-		bl draw_clean 
+	//	bl delay 
+	//	bl draw_clean 
 		
 		b Loop
 
