@@ -21,6 +21,7 @@ main:
     bl draw_purple_rainbow
     bl draw_toes
     bl draw_stars
+    bl draw_rainbow_circles
     
     // Infinite Loop
 InfLoop:

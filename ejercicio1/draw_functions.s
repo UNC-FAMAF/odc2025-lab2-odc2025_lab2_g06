@@ -17,7 +17,7 @@
     .equ VIOLET, 0x6835ff
     .equ BLUE, 0x151D7E
 
-
+    .globl draw_rainbow_circles
     .globl draw_background 
     .globl draw_body
     .globl draw_red_rainbow
@@ -169,37 +169,6 @@ draw_stars:
     ldr x7, =WHITE
     bl draw_rectangle
 
-//estrella 5 (atras patas gato)
-    mov x1, 224      
-    mov x2, 453
-    mov x3, 229    
-    mov x4, 442
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 234 
-    mov x2, 463
-    mov x3, 245     
-    mov x4, 458
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 224    
-    mov x2, 463
-    mov x3, 229    
-    mov x4, 458
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 224     
-    mov x2, 477
-    mov x3, 229    
-    mov x4, 468
-    ldr x7, =WHITE
-    bl draw_rectangle
-    mov x1, 207      
-    mov x2, 463
-    mov x3, 218    
-    mov x4, 458
-    ldr x7, =WHITE
-    bl draw_rectangle   
 
 // estrellla junta (1x1 esq. inf der)
     mov x1, 454 
@@ -437,6 +406,154 @@ draw_stars:
     mov x2, 32
     mov x3, 523    
     mov x4, 28
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    // nuevas estrellas //
+    mov x1, 83
+    mov x2, 26
+    mov x3, 88   
+    mov x4, 21
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 93
+    mov x2, 31
+    mov x3, 99  
+    mov x4, 26
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 99
+    mov x2, 42
+    mov x3, 104  
+    mov x4, 37
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 93
+    mov x2, 53
+    mov x3, 99   
+    mov x4, 47
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 83
+    mov x2, 58
+    mov x3, 88   
+    mov x4, 53
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 72
+    mov x2, 53
+    mov x3, 78   
+    mov x4, 47
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 67
+    mov x2, 42
+    mov x3, 72   
+    mov x4, 37
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 72
+    mov x2, 31
+    mov x3, 77   
+    mov x4, 26
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 60
+    mov x2, 121
+    mov x3, 65   
+    mov x4, 116
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 65
+    mov x2, 116
+    mov x3, 71   
+    mov x4, 111
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 71
+    mov x2, 121
+    mov x3, 76   
+    mov x4, 116
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 65
+    mov x2, 126
+    mov x3, 71   
+    mov x4, 121
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 551
+    mov x2, 108
+    mov x3, 562   
+    mov x4, 103
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 567
+    mov x2, 97
+    mov x3, 572   
+    mov x4, 87
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 567
+    mov x2, 108
+    mov x3, 572   
+    mov x4, 103
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 578
+    mov x2, 108
+    mov x3, 588   
+    mov x4, 103
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 567
+    mov x2, 124
+    mov x3, 572   
+    mov x4, 114
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 312
+    mov x2, 158
+    mov x3, 317   
+    mov x4, 153
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 327
+    mov x2, 142
+    mov x3, 333   
+    mov x4, 137
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 344
+    mov x2, 158
+    mov x3, 348   
+    mov x4, 153
+    ldr x7, =WHITE
+    bl draw_rectangle
+
+    mov x1, 327
+    mov x2, 174
+    mov x3, 333   
+    mov x4, 169
     ldr x7, =WHITE
     bl draw_rectangle
 
@@ -879,8 +996,6 @@ draw_toes:
     add sp, sp, #48
 ret
 
-
-
 draw_purple_rainbow:
     sub sp, sp, #48
     str x1, [sp]
@@ -1121,9 +1236,6 @@ draw_green_rainbow:
     add sp, sp, #48
 ret
 
-
-
-
 draw_yellow_rainbow:
     sub sp, sp, #48
     str x1, [sp]
@@ -1334,8 +1446,6 @@ draw_red_rainbow:
     ldr x1, [sp]
     add sp, sp, #48
 ret
-
-
 
 draw_body:
     sub sp, sp, #48
@@ -1748,9 +1858,6 @@ draw_body:
     bl draw_rectangle
 
     
-
-
-    
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
@@ -1760,8 +1867,8 @@ draw_body:
     add sp, sp, #48
 ret
 
+draw_rainbow_circles:
 
-/* dibujo_dos_circulos_ejemplo:
     sub sp, sp, #40
     str x1, [sp]
     str x2, [sp, #8]
@@ -1769,17 +1876,118 @@ ret
     str x7, [sp, #24]
     str x30, [sp, #32]
 
+    mov x1, 20
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =RED
+    bl draw_circle
 
-    mov x1, 250
-    mov x2, 180
-    mov x3, 60
-    ldr x7, =BLUE
+    mov x1, 53
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =ORANGE
+    bl draw_circle
+
+    mov x1, 86
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =YELLOW
+    bl draw_circle
+
+    mov x1, 119
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =GREEN
+    bl draw_circle
+
+    mov x1, 152
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =LIGHT_BLUE
+    bl draw_circle
+
+    mov x1, 185
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =VIOLET
+    bl draw_circle
+
+    mov x1, 218
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =PINK
+    bl draw_circle
+
+    mov x1, 251
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =RED
+    bl draw_circle
+
+    mov x1, 284
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =ORANGE
+    bl draw_circle
+
+    mov x1, 317
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =YELLOW
     bl draw_circle
 
     mov x1, 350
-    mov x2, 280
-    mov x3, 90
-    ldr x7, =DARK_GRAY
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =GREEN
+    bl draw_circle
+
+    mov x1, 383
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =LIGHT_BLUE
+    bl draw_circle
+
+    mov x1, 416
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =VIOLET
+    bl draw_circle
+
+    mov x1, 449
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =PINK
+    bl draw_circle
+
+    mov x1, 482
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =RED
+    bl draw_circle
+
+    mov x1, 515
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =ORANGE
+    bl draw_circle
+
+    mov x1, 548
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =YELLOW
+    bl draw_circle
+
+    mov x1, 581
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =GREEN
+    bl draw_circle
+
+    mov x1, 614
+    mov x2, 465
+    mov x3, 14
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     ldr x30, [sp, #32]
@@ -1790,29 +1998,3 @@ ret
     add sp, sp, #40
 ret
 
-draw_sarasa:
-    sub sp, sp, #48
-    str x1, [sp]
-    str x2, [sp, #8]
-    str x3, [sp, #16]
-    str x4, [sp, #24]
-    str x7, [sp, #32]
-    str x30, [sp, #40]
-//dibujar_rectangulo(x,y)
-    mov x1, 0       
-    mov x2, 100       
-    mov x3, 200        
-    mov x4, 310
-    ldr x7, =LIGHT_GRAY
-    bl draw_rectangle
-
-    ldr x30, [sp, #40]
-    ldr x7, [sp, #32]
-    ldr x4, [sp, #24]
-    ldr x3, [sp, #16]
-    ldr x2, [sp, #8]
-    ldr x1, [sp]
-    add sp, sp, #48
-
-    ret
- */
