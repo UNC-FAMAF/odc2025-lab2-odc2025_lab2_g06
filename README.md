@@ -1,20 +1,76 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/VsnOOl0p)
-# Lab Org. y Arq. de Computadoras
 
-* Configuración de pantalla: `640x480` pixels, formato `ARGB` 32 bits.
-* El registro `X0` contiene la dirección base del FrameBuffer (Pixel 1).
-* El código de cada consigna debe ser escrito en el archivo _app.s_.
-* El archivo _start.s_ contiene la inicialización del FrameBuffer **(NO EDITAR)**, al finalizar llama a _app.s_.
-* El código de ejemplo pinta toda la pantalla un solo color.
+# 🚀 Laboratorio de Organización y Arquitectura de Computadoras
 
-## Estructura
+**Resolución de ejercicios prácticos usando Assembler ARMv8 sobre emulación de Raspberry Pi 3 y framebuffer.**
 
-* **[app.s](app.s)** Este archivo contiene a apliación. Todo el hardware ya está inicializado anteriormente.
-* **[start.s](start.s)** Este archivo realiza la inicialización del hardware.
-* **[Makefile](Makefile)** Archivo que describe como construir el software _(que ensamblador utilizar, que salida generar, etc)_.
-* **[memmap](memmap)** Este archivo contiene la descripción de la distribución de la memoria del programa y donde colocar cada sección.
+---
 
-* **README.md** este archivo.
+## 📺 Especificaciones técnicas
+
+- Resolución: `640x480` píxeles, formato `ARGB` 32 bits.
+- Registro `X0`: contiene la dirección base del FrameBuffer.
+- El código de cada ejercicio está en `app.s`.
+- El archivo `start.s` inicializa el FrameBuffer. **(NO MODIFICAR)**
+
+---
+
+## 👩‍💻 Autores
+
+| Nombre                         | Rol                |
+|-------------------------------|--------------------|
+| Carla Virginia Díaz Peña      | Integrante 1       |
+| Guadalupe Rocío Acosta        | Integrante 2       |
+| Emil Morano Firme             | Integrante 3       |
+| Santiago Denis                | Integrante 4       |
+
+---
+
+## 📝 Descripción de los ejercicios
+
+### 🎨 Ejercicio 1: Nyan Cat
+
+Creamos un meme animado del famoso **Nyan Cat**, volando por el espacio con fondo estrellado. Incluye detalles circulares con temática de arcoíris y texto integrado, todo dibujado desde cero.
+
+### 🌀 Ejercicio 2: Animación
+
+Partimos del frame del ejercicio anterior, y agregamos cuatro nuevos frames para generar una animación en bucle. El resultado: Nyan Cat viaja alegremente por el espacio.
+
+---
+
+## 📁 Estructura del Proyecto
+
+### 📂 Ejercicio 1
+
+- **[app.s](./ejercicio1/app.s)**  → Código principal que llama a las funciones de animación.
+- **[start.s](./ejercicio1/start.s)** → Inicialización del hardware.
+- **[Makefile](./ejercicio1/Makefile)** → Script de compilación.
+- **[memmap](./ejercicio1/memmap)** → Mapeo de memoria.
+- **[draw_shapes.s](./ejercicio1/draw_shapes.s)** → Funciones básicas para dibujar figuras.
+- **[draw_functions.s](./ejercicio1/draw_functions.s)** → Agrupación de funciones para dibujar partes específicas (fondo, cuerpo, arcoíris, etc.).
+
+### 📂 Ejercicio 2
+
+- **[app.s](./ejercicio2/app.s)** → Controlador de animación por frames.
+- **[start.s](start.s)** → Inicialización (idéntico al ejercicio 1).
+- **[Makefile](Makefile)** → Script de compilación.
+- **[memmap](memmap)** → Mapeo de memoria.
+- **[draw_frames.s](./ejercicio2/draw_frames.s)** → Gestor de los 5 frames de animación.
+- **[draw_frame_1.s](./ejercicio2/draw_frame_1.s)** Este archivo crea el primer frame de la animación utilizando llamadas a las funciones de draw_shapes.s.
+- **[draw_frame_2.s](./ejercicio2/draw_frame_2.s)** Este archivo crea el segundo frame.
+- **[draw_frame_3.s](./ejercicio2/draw_frame_3.s)** Este archivo crea el tercer frame.
+- **[draw_frame_4.s](./ejercicio2/draw_frame_4.s)** Este archivo crea el cuarto frame.
+- **[draw_frame_5.s](./ejercicio2/draw_frame_5.s)** Este archivo crea el quinto frame.
+- **[draw_cleans.s](./ejercicio2/draw_cleans.s)** → Limpieza inteligente del frame anterior, evitando que titile la pantalla.
+- **[delay.s](./ejercicio2/delay.s)** → Generador de retraso entre frames.
+
+---
+
+## 🎬 Demo
+
+🖥 Podés ver una demostración del proyecto en el siguiente link:  
+👉 [Demo en Padlet](https://padlet.com/odcfamaf/odc_labs2-cg1xb0a4lbdwq7lk/wish/E851Q0rL3eR0WVAb)
+
 
 ## Uso
 
@@ -37,6 +93,13 @@ $ make runGPIOM
 ```
 
 Ejecutar *luego* de haber corrido qemu.
+
+
+### Importante a saber sobre el delay: 
+El delay tiene, en la linea 19, el uso de la variable **DELAY_OPERATIONS**. Si la animacion en su computadora llega a ser muy rapida o lenta, puede modificar el valor de dicha variable para que haga mas o menos operaciones respectivamente.
+```
+    mov x19, DELAY_OPERATIONS   
+```
 
 ## Como correr qemu y gcc usando Docker containers
 

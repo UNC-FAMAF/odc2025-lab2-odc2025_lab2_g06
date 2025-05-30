@@ -9,6 +9,7 @@
 
 
 //=====================================> FUNCION PIXEL <=====================================//
+//Dibuja un px en las coord (x,y) con un color. Entradas: x0=base fb; x1=x; x2=y; x7=color; 
 draw_pixel:
     mov x16, SCREEN_WIDTH 
     mul x16, x2, x16   
@@ -21,6 +22,7 @@ ret
 
 
 //=====================================> FUNCION RECTANGULO <=====================================//
+//Dibuja un rectangulo desde (x,y) inf izq a (x',y') sup der. Entradas: x0=base fb; x1=x; x2=y; x3=x'; x4=y'; x7=color;
 draw_rectangle: 
 	sub sp, sp, #56      
 	str x1, [sp]           
@@ -76,7 +78,8 @@ draw_rectangle:
 ret
 
 
-
+//=====================================> FUNCION LINEA HORIZONTAL <=====================================//
+//Esta funcion existe puramente para usar en draw_circle. Asi el circulo se puede llenar stackeando lineas horizontales.
 draw_hline:
     sub sp, sp, #48
     str x1, [sp]
@@ -110,6 +113,7 @@ end_hline:
 ret
 
 //=====================================> FUNCION CIRCULO <=====================================//
+//Dibuja un circulo alrededor del punto (x,y), con un radio determinado. Entradas: x0=base fb; x1=xc(central x); x2=yc(central y); x3=r (ratius); x7=color;
 draw_circle:
     sub sp, sp, #88
     str x1, [sp]
@@ -134,8 +138,6 @@ draw_circle:
     sub x11, x11, x6, lsl 1 
 
 circle_loop:
-
-
     sub x1, x4, x9         
     add x3, x4, x9         
     add x2, x5, x10        

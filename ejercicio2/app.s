@@ -7,6 +7,7 @@
 main:
 	bl draw_clean
 Loop:
+
 	sub sp, sp, #56
     str x1, [sp]
     str x2, [sp, #8]
@@ -26,7 +27,6 @@ Loop:
  
 	bl clean_stars_frame2
  	bl frame_3
-	
 	bl delay
 
 	bl clean_stars_frame3

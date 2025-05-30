@@ -10,7 +10,7 @@
     .globl clean_stars_frame4
     .globl clean_stars_frame5
 
-
+//En este archivo dibujamos lo que se encarga de quitar lo dibujado por un frame previo que puede molestar al frame actual.
 draw_clean:
     sub sp, sp, #48
     str x1, [sp]

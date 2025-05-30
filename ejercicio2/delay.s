@@ -1,12 +1,14 @@
+.equ DELAY_OPERATIONS,  0x08000000
+
 .globl delay
 
+//La funcion que provoca delay en la animacion forzando a la cpu a realizar DELAY_OPERATIONS operaciones.
 delay:
     sub sp, sp, #16
     str x30, [sp, #8]    
     str x19, [sp]        
 
-    //mov x19, 0x01000000  
-    mov x19, 0x20000000  
+    mov x19, DELAY_OPERATIONS   
     
 1: 
     sub x19, x19, #1

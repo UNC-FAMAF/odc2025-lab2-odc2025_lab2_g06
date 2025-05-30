@@ -29,8 +29,7 @@
     .globl draw_toes
     .globl draw_stars
     .globl draw_letras
-/*     .globl draw_star
-    .globl draw_sarasa */
+
 
 draw_stars:
     sub sp, sp, #48
@@ -570,7 +569,6 @@ draw_stars:
 
 ret
 
-
 draw_letras:
 
     sub sp, sp, #48
@@ -864,7 +862,7 @@ draw_background:
     ldr x1, [sp]
     add sp, sp, #48
 
-    ret
+ret
 
 draw_toes:
 
@@ -1124,7 +1122,6 @@ draw_blue_rainbow:
     add sp, sp, #48
 ret
 
-
 draw_green_rainbow:
     sub sp, sp, #48
     str x1, [sp]
@@ -1382,7 +1379,6 @@ draw_orange_rainbow:
     ldr x1, [sp]
     add sp, sp, #48
 ret
-
 
 draw_red_rainbow:
     sub sp, sp, #48

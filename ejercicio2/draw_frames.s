@@ -3,8 +3,6 @@
 	.equ BITS_PER_PIXEL,  	32
     .equ DARK_BLUE, 0x003466
 
-
-
 .globl frame_1
 .globl frame_2
 .globl frame_3
@@ -19,7 +17,6 @@ frame_1:
     str x4, [sp, #24]
     str x7, [sp, #32]
     str x30, [sp, #40]
-
     bl draw_background_1
     bl draw_body_1
     bl draw_letters_1
@@ -32,7 +29,6 @@ frame_1:
     bl draw_toes_1
     bl draw_stars_1
     bl draw_rainbow_circles_1
-
     ldr x30, [sp, #40]
     ldr x7, [sp, #32]
     ldr x4, [sp, #24]
