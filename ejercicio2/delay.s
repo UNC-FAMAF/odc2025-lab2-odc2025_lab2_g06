@@ -5,8 +5,8 @@ delay:
     str x30, [sp, #8]    
     str x19, [sp]        
 
-    mov x19, 0x01000000  
-    //mov x19, 0x20000000  
+    //mov x19, 0x01000000  
+    mov x19, 0x20000000  
     
 1: 
     sub x19, x19, #1

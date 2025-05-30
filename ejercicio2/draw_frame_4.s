@@ -185,7 +185,6 @@ draw_stars_4:
     ldr x7, =WHITE
     bl draw_rectangle
 
-    mov x1, 480
     mov x2, 45
     mov x3, 506
     mov x4, 30
@@ -1785,7 +1784,7 @@ draw_rainbow_circles_4:
     mov x1, 86
     mov x2, 465
     mov x3, 14
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     mov x1, 119
@@ -1815,7 +1814,7 @@ draw_rainbow_circles_4:
     mov x1, 251
     mov x2, 465
     mov x3, 14
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     mov x1, 284
@@ -1857,7 +1856,7 @@ draw_rainbow_circles_4:
     mov x1, 482
     mov x2, 465
     mov x3, 14
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     mov x1, 515

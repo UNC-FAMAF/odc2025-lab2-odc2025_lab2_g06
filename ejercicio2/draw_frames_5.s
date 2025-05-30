@@ -1806,7 +1806,7 @@ draw_rainbow_circles_5:
     mov x1, 119
     mov x2, 465
     mov x3, 14
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     mov x1, 152
@@ -1836,7 +1836,7 @@ draw_rainbow_circles_5:
     mov x1, 284
     mov x2, 465
     mov x3, 14
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     mov x1, 317
@@ -1878,7 +1878,7 @@ draw_rainbow_circles_5:
     mov x1, 515
     mov x2, 465
     mov x3, 14
-    ldr x7, =BLUE
+    ldr x7, =LIGHT_BLUE
     bl draw_circle
 
     mov x1, 548
